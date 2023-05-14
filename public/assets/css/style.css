@@ -237,11 +237,11 @@ img{
 	width: 100%;
 	margin: 3rem auto;
 }
-.about-img-section{}
+
 .about-img-section img{
     max-width: 100%;
 }
-.about-info-section{}
+
 .about-info-section span {
 	padding: 10px 0;
 	font-size: 23px;
@@ -271,11 +271,7 @@ img{
 	color: black;
 	opacity: 0.6;
 }
-.tab-section ul{}
-.tab-section ul li{}
-.tab-section ul li a{}
 
-.about-bottom-section{}
 .about-contact {
 	padding: 6px 0;
     text-align: right;
@@ -325,7 +321,7 @@ img{
 	margin: auto;
 	padding: 5px 0 10px 0;
 }
-.about-contacts{}
+
 .about-contacts span{
     color: #ed1b24;
     font-size: 16px;
@@ -346,8 +342,7 @@ img{
 	font-size: 18px;
 }
 
-.about-icon-section{}
-.about-icon{}
+
 .about-icon span{
 	font-size: 70px;
     line-height: 1;
@@ -367,9 +362,7 @@ img{
 	text-transform: uppercase;
 }
 
-.about-profile{
 
-}
 .about-member-details{
 	margin: 35px 0 !important;
 }
@@ -476,6 +469,18 @@ img{
 	text-align: center;
 }
 
+.member-image img{
+    margin: 1rem;
+    width: 100%;
+  
+}
+
+.about-logo-img img{
+    margin: 1rem;
+    width: 100%;
+}
+/*about  section end*/
+
 /*product section start*/
 .products{
     font-size: 1.7rem;
@@ -505,11 +510,7 @@ color: blue;
 text-transform: uppercase;
 }
 
-img{
-    margin: 1rem;
-    width: 100%;
-    height:150px;
-}
+
 .all-products{
     display: flex;
     align-items: center;
