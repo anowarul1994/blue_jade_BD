@@ -9,7 +9,7 @@
                 </li>                    
                 <li>
                     <span><i class="fa-regular fa-envelope"></i></span>
-                    <a href="#">bluejade58@gmail.com</a>
+                    <a href="mailto:bluejade58@gmail.com">bluejade58@gmail.com</a>
                 </li>
                 <li>
                     <span><i class="fa-solid fa-location-dot"></i></span>
