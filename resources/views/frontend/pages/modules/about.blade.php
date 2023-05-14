@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 
 @section('page_title', 'About')
-{{ asset('/assets/image/about/') }}/
+
 @section('content')    <div class="about-section">
         <div class="container">
                 <div class="row">
@@ -247,7 +247,7 @@
 
     <div class="container">
         <div class="about-logo">
-            <div class="row">
+            <div class="row slider-logo">
                 <div class="col-lg-2 col-md-4 col-sm-6">
                     <div class="about-logo-img">
                         <img src="{{ asset('/assets/image/about/') }}/logo4.png" alt="">
