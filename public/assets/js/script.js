@@ -47,4 +47,36 @@ $('.slider-logo').slick({
           }
         }
     ]
-  });
+});
+  
+// product js start
+
+const liItem = document.querySelectorAll('ul li');
+const imgItem = document.querySelectorAll('.products img');
+    liItem.forEach(li => {
+    li.onclick = function () {
+        //active
+        liItem.forEach(li => {
+            li.className = " ";
+        })
+
+        li.className = " active";
+        doFilter();
+    }
+
+    //Filtering
+        const value = li.textContent;
+        function doFilter() {
+            imgItem.forEach(img => {
+                if (value.toLowerCase() == 'all') {
+                     img.style.display = 'block';
+                 } else { 
+                    img.style.display = 'none';
+                    if (img.getAttribute('data-filter') == value.toLowerCase()) {
+                        img.style.display = 'block';
+                    }
+                }
+            })
+        }
+});
+// product js end
