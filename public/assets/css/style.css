@@ -744,4 +744,165 @@ scale: 1.1;
 
 
 
+/* footer start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+}
 
+a {
+    text-decoration: none;
+    transition: .5s;
+    color: #fff;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+footer {
+    background-color: rgb(58, 28, 129);
+    color: #fff;
+    height: 500px;
+}
+
+.footer-info {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
+}
+
+.footer-info .footer-width {
+    padding: 0 15px;
+}
+
+.footer-info h2 {
+    margin-bottom: 20px;
+}
+.contact {
+    width: 30%;
+}
+
+.contact ul li{
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+}
+ .contact ul li span{
+    margin-right: 10px;
+ }
+.link{
+    width: 30%;
+}
+
+.link ul li{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.link ul li a:hover{
+    color: green;
+}
+
+.about {
+    width: 30%;
+}
+
+@media screen and (max-width:992px){
+    .contact{
+        width: 35%;
+    }
+    .link{
+        width: 25%;
+    }
+    .about{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .contact , .link , .about{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer-info{
+        flex-direction: column;
+    }
+}
+
+.logo-box{
+    background-color: rgb(224, 168, 65);
+    padding: 60px 20px;
+    display: flex;
+}
+
+.scl-icon ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.scl-icon ul li{
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    background: rgb(55, 10, 97);
+    line-height: 50px;
+    margin: 0 15px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 5px rgb(79, 20, 146) ;
+}
+
+.scl-icon ul li:before{
+    position: absolute;
+    content: '';
+    top: 3px;
+    left: 0;
+    background: orange;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.scl-icon ul li:hover:before{ 
+    box-shadow: 3px white;
+}
+.scl-icon ul li:hover{
+    color: orange;
+    text-shadow: 3px white;
+    box-shadow: 0 3px white;
+
+}
+
+
+.copy-right{
+    padding: 15px 20px;
+    text-align: left;
+    display: flex;
+    background: #fff;
+    color: #000;
+}
+.copy-right a{
+    color: rgb(82, 8, 143);
+}
+.condition{
+    text-align: right;
+    padding: 20px 20px;
+}
+
+/* footer start */
