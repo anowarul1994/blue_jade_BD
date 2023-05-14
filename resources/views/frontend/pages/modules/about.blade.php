@@ -2,7 +2,8 @@
 
 @section('page_title', 'About')
 
-@section('content')    <div class="about-section">
+@section('content')    
+<div class="about-section">
         <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12">
