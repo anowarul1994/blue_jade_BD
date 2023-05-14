@@ -4,84 +4,42 @@
 
 @section('content')
      
-<section class="products" >
-     <h1>Our Products</h1>
-     <div class="container">
-         <div class="all-products">
-             <div class="product">
-                 <img src="{{ asset('/assets/image/product/') }}/i-phone.jpeg"/>
-                 <div class="product-info">
-                     <h4 class="product-title">I-Phone</h4>
-                     <p class="product-price"><span>$</span>100</p>
-                     <a class="product-btn" href="#">Buy Now</a>
-                 </div>
-             </div>
-     
-             <div class="product">
-                 <img src="{{ asset('/assets/image/product/') }}/bike.jpg">
-                 <div class="product-info">
-                     <h4 class="product-title">Bike</h4>
-                     <p class="product-price"><span>$</span>100</p>
-                     <a class="product-btn" href="#">Buy Now</a>
-                 </div>
-             </div>
-     
-             <div class="product">
-                 <img src="{{ asset('/assets/image/product/') }}/cycle.jpg">
-                 <div class="product-info">
-                     <h4 class="product-title">Cycle</h4>
-                     <p class="product-price"><span>$</span>100</p>
-                     <a class="product-btn" href="#">Buy Now</a>
-                 </div>
-             </div>
-     
-             <div class="product">
-                 <img src="{{ asset('/assets/image/product/') }}/Bag.jpg">
-                 <div class="product-info">
-                     <h4 class="product-title">Bag</h4>
-                     <p class="product-price"><span>$</span>100</p>
-                     <a class="product-btn" href="#">Buy Now</a>
-                 </div>
-             </div>
-             <div class="product">
-                 <img src="{{ asset('/assets/image/product/') }}/i-phone.jpeg"/>
-                 <div class="product-info">
-                     <h4 class="product-title">I-Phone</h4>
-                     <p class="product-price"><span>$</span>100</p>
-                     <a class="product-btn" href="#">Buy Now</a>
-                 </div>
-             </div>
-     
-             <div class="product">
-                 <img src="{{ asset('/assets/image/product/') }}/bike.jpg">
-                 <div class="product-info">
-                     <h4 class="product-title">Bike</h4>
-                     <p class="product-price"><span>$</span>100</p>
-                     <a class="product-btn" href="#">Buy Now</a>
-                 </div>
-             </div>
-     
-             <div class="product">
-                 <img src="{{ asset('/assets/image/product/') }}/cycle.jpg">
-                 <div class="product-info">
-                     <h4 class="product-title">Cycle</h4>
-                     <p class="product-price"><span>$</span>100</p>
-                     <a class="product-btn" href="#">Buy Now</a>
-                 </div>
-             </div>
-     
-             <div class="product">
-                 <img src="{{ asset('/assets/image/product/') }}/Bag.jpg">
-                 <div class="product-info">
-                     <h4 class="product-title">Bag</h4>
-                     <p class="product-price"><span>$</span>100</p>
-                     <a class="product-btn" href="#">Buy Now</a>
-                 </div>
-             </div>
-             
-     
-         </div>
-     </div>
-     
-    </section>
+   <section class="card-design">
+    <div class="container">
+        <h1>Our Product</h1>
+     <ul class="nav">
+        <li class="active">All</li>
+        <li>bag</li>
+        <li>bike</li>
+        <li>phone</li>
+        <li>cycle</li>
+     </ul>
+        <div class="row">
+            <div class="col-md-3">
+                 <div class="products">
+                    <img src="{{ asset('/assets/image/product/') }}/Bag.jpg" data-filter="bag"/>
+                    
+                </div>
+            </div>
+                <!-- bag -->
+            <div class="col-md-3">
+                <div class="products">
+                    <!-- bike -->
+                        <img src="{{ asset('/assets/image/product/') }}/bike.jpg" data-filter="bike"/>
+                </div>
+           </div>
+            <div class="col-md-3">     
+               <div class="products">
+                    <!-- cycle -->
+                    <img src="{{ asset('/assets/image/product/') }}/i-phone.jpeg" data-filter="phone"/>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="products">
+                    <!-- Phone -->
+                    <img src="{{ asset('/assets/image/product/') }}/cycle.jpg" data-filter="cycle"/>
+               </div>
+            </div>
+    </div>
+   </section>
 @endsection
