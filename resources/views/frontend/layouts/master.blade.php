@@ -4,6 +4,9 @@
     @include('frontend.includes.head')
 </head>
 <body>
+    {{-- navbar secction start --}}
+    @include('frontend.includes.navbar')
+    {{-- navbar secction end --}}
      {{-- slider secction start --}}
     @include('frontend.includes.slider')
      {{-- slider secction end --}}

@@ -1,6 +1,6 @@
 $('.slider-wrapper').slick({
     dots: true,
-    arrows:true, 
+    arrows:true,
     infinite:true,
     speed:700,
     slidesToShow:1,
@@ -13,3 +13,6 @@ $('.slider-wrapper').slick({
     nextArrow:'<div class="slick-arrow next"><span class="fa fa-angle-right"></span></div>',
 
 })
+$(window).on("load",function(){
+  $("#preloader").fadeOut();
+});
