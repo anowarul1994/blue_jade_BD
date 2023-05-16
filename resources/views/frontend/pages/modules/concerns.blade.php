@@ -4,42 +4,74 @@
 
 @section('content')
      
-   <section class="card-design">
-    <div class="container">
-        <h1>Our Product</h1>
-     <ul class="nav">
-        <li class="active">All</li>
-        <li>bag</li>
-        <li>bike</li>
-        <li>phone</li>
-        <li>cycle</li>
-     </ul>
-        <div class="row">
-            <div class="col-md-3">
-                 <div class="products">
-                    <img src="{{ asset('/assets/image/product/') }}/Bag.jpg" data-filter="bag"/>
-                    
-                </div>
-            </div>
-                <!-- bag -->
-            <div class="col-md-3">
-                <div class="products">
-                    <!-- bike -->
-                        <img src="{{ asset('/assets/image/product/') }}/bike.jpg" data-filter="bike"/>
-                </div>
-           </div>
-            <div class="col-md-3">     
-               <div class="products">
-                    <!-- cycle -->
-                    <img src="{{ asset('/assets/image/product/') }}/i-phone.jpeg" data-filter="phone"/>
-               </div>
-            </div>
-            <div class="col-md-3">
-               <div class="products">
-                    <!-- Phone -->
-                    <img src="{{ asset('/assets/image/product/') }}/cycle.jpg" data-filter="cycle"/>
-               </div>
-            </div>
+
+    
+<div class="container bt-5">
+        <h1 class="header">our product</h1>
+    <div class="nav">
+        <ul class="filter_btn">
+            <li  class="active" data-target="all">All</li>
+            <li  data-target="car">Car</li>
+            <li  data-target="chair">Chair</li>
+            <li  data-target="shirt">Shirt</li>
+            <li  data-target="phone">Phone</li>
+        </ul>
     </div>
-   </section>
+        <!-- img section -->
+          <!-- car filter -->
+
+      <div class="row parent_div">
+         <div class="col-md-3 myImg" data-id="car">
+            <img src="{{ asset('/assets/image/product/') }}/car1.png" alt="">
+         </div>
+         <div class="col-md-3"data-id="car" >
+            <img src="{{ asset('/assets/image/product/') }}/car2.png" alt="">
+         </div>
+         <div class="col-md-3"data-id="car" >
+            <img src="{{ asset('/assets/image/product/') }}/ch3.png" alt="">
+         </div>
+         <div class="col-md-3"data-id="car" >
+            <img src="{{ asset('/assets/image/product/') }}/car4.png" alt="">
+         </div>
+         <!-- chair filter -->
+         <div class="col-md-3" data-id="chair">
+            <img src="{{ asset('/assets/image/product/') }}/ch1.png" alt="">
+         </div>
+         <div class="col-md-3"data-id="chair" >
+            <img src="{{ asset('/assets/image/product/') }}/ch2.png" alt="">
+         </div>
+         <div class="col-md-3"data-id="chair" >
+            <img src="{{ asset('/assets/image/product/') }}/ch3.png" alt="">
+         </div>
+         <div class="col-md-3"data-id="chair" >
+            <img src="{{ asset('/assets/image/product/') }}/ch4.png" alt="">
+         </div>
+         <!-- shirt filter -->
+         <div class="col-md-3" data-id="shirt">
+            <img src="{{ asset('/assets/image/product/') }}/sh1.png" alt="">
+         </div>
+         <div class="col-md-3"data-id="shirt" >
+            <img src="{{ asset('/assets/image/product/') }}/sh2.png" alt="">
+         </div>
+         <div class="col-md-3"data-id="shirt" >
+            <img src="{{ asset('/assets/image/product/') }}/sh3.png" alt="">
+         </div>
+         <div class="col-md-3"data-id="shirt" >
+            <img src="{{ asset('/assets/image/product/') }}/sh4.png" alt="">
+         </div>
+         <!-- phone filter -->
+         <div class="col-md-3" data-id="phone">
+            <img src="{{ asset('/assets/image/product/') }}/p1.png" alt="">
+         </div>
+         <div class="col-md-3"data-id="phone" >
+            <img src="{{ asset('/assets/image/product/') }}/p2.png" alt="">
+         </div>
+         <div class="col-md-3"data-id="phone" >
+            <img src="{{ asset('/assets/image/product/') }}/p3.png" alt="">
+         </div>
+         <div class="col-md-3"data-id="phone" >
+            <img src="{{ asset('/assets/image/product/') }}/p4.png" alt="">
+         </div>
+   </div>
+</div>    
 @endsection
