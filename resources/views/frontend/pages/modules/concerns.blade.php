@@ -4,42 +4,99 @@
 
 @section('content')
      
-   <section class="card-design">
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <title>Product </title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
     <div class="container">
-        <h1>Our Product</h1>
-     <ul class="nav">
-        <li class="active">All</li>
-        <li>bag</li>
-        <li>bike</li>
-        <li>phone</li>
-        <li>cycle</li>
-     </ul>
-        <div class="row">
-            <div class="col-md-3">
-                 <div class="products">
-                    <img src="{{ asset('/assets/image/product/') }}/Bag.jpg" data-filter="bag"/>
-                    
-                </div>
-            </div>
-                <!-- bag -->
-            <div class="col-md-3">
-                <div class="products">
-                    <!-- bike -->
-                        <img src="{{ asset('/assets/image/product/') }}/bike.jpg" data-filter="bike"/>
-                </div>
-           </div>
-            <div class="col-md-3">     
-               <div class="products">
-                    <!-- cycle -->
-                    <img src="{{ asset('/assets/image/product/') }}/i-phone.jpeg" data-filter="phone"/>
-               </div>
-            </div>
-            <div class="col-md-3">
-               <div class="products">
-                    <!-- Phone -->
-                    <img src="{{ asset('/assets/image/product/') }}/cycle.jpg" data-filter="cycle"/>
-               </div>
-            </div>
+        <h1 class="header">our product</h1>
+    <div class="nav">
+        <ul class="filter_btn">
+            <li  class="active" data-target="all">All</li>
+            <li  data-target="car">Car</li>
+            <li  data-target="chair">Chair</li>
+            <li  data-target="shirt">Shirt</li>
+            <li  data-target="phone">Phone</li>
+        </ul>
     </div>
-   </section>
+        <!-- img section -->
+          <!-- car filter -->
+     
+        <div class="">
+            
+                <div class="row parent_div">
+                    <div class="col-md-3 myImg" data-id="car">
+                        <img src="./images/car1.png" alt="">
+                    </div>
+                    <div class="col-md-3"data-id="car" >
+                        <img src="./images/car2.png" alt="">
+                    </div>
+                    <div class="col-md-3"data-id="car" >
+                        <img src="./images/ch3.png" alt="">
+                    </div>
+                    <div class="col-md-3"data-id="car" >
+                        <img src="./images/car4.png" alt="">
+                    </div>
+                    <!-- chair filter -->
+                    <div class="col-md-3" data-id="chair">
+                        <img src="./images/ch1.png" alt="">
+                    </div>
+                    <div class="col-md-3"data-id="chair" >
+                        <img src="./images/ch2.png" alt="">
+                    </div>
+                    <div class="col-md-3"data-id="chair" >
+                        <img src="./images/ch3.png" alt="">
+                    </div>
+                    <div class="col-md-3"data-id="chair" >
+                        <img src="./images/ch4.png" alt="">
+                    </div>
+                    <!-- shirt filter -->
+                    <div class="col-md-3" data-id="shirt">
+                        <img src="./images/sh1.png" alt="">
+                    </div>
+                    <div class="col-md-3"data-id="shirt" >
+                        <img src="./images/sh2.png" alt="">
+                    </div>
+                    <div class="col-md-3"data-id="shirt" >
+                        <img src="./images/sh3.png" alt="">
+                    </div>
+                    <div class="col-md-3"data-id="shirt" >
+                        <img src="./images/sh4.png" alt="">
+                    </div>
+                    <!-- phone filter -->
+                    <div class="col-md-3" data-id="phone">
+                        <img src="./images/p1.png" alt="">
+                    </div>
+                    <div class="col-md-3"data-id="phone" >
+                        <img src="./images/p2.png" alt="">
+                    </div>
+                    <div class="col-md-3"data-id="phone" >
+                        <img src="./images/p3.png" alt="">
+                    </div>
+                    <div class="col-md-3"data-id="phone" >
+                        <img src="./images/p4.png" alt="">
+                    </div>
+                </div>
+        </div>
+    </div>    
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>
 @endsection
