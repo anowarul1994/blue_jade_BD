@@ -482,14 +482,8 @@ img{
 /*about  section end*/
 
 /*product section start*/
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body{
-    height:165vh;
+    height:100%;
     background-color: #b2bec3;
 }
 .header{
