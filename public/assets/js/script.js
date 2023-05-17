@@ -1,6 +1,6 @@
 $('.slider-wrapper').slick({
     dots: true,
-    arrows:true, 
+    arrows:true,
     infinite:true,
     speed:700,
     slidesToShow:1,
@@ -13,6 +13,10 @@ $('.slider-wrapper').slick({
     nextArrow:'<div class="slick-arrow next"><span class="fa fa-angle-right"></span></div>',
 
 })
+
+$(window).on("load",function(){
+  $("#preloader").fadeOut();
+});
 
 
 // logo slider
@@ -51,32 +55,27 @@ $('.slider-logo').slick({
   
 // product js start
 
-const liItem = document.querySelectorAll('ul li');
-const imgItem = document.querySelectorAll('.products img');
-    liItem.forEach(li => {
-    li.onclick = function () {
-        //active
-        liItem.forEach(li => {
-            li.className = " ";
-        })
+var filter_btn = document.querySelector(".filter_btn").children;
+var parent_div = document.querySelector(".parent_div").children;
 
-        li.className = " active";
-        doFilter();
-    }
-
-    //Filtering
-        const value = li.textContent;
-        function doFilter() {
-            imgItem.forEach(img => {
-                if (value.toLowerCase() == 'all') {
-                     img.style.display = 'block';
-                 } else { 
-                    img.style.display = 'none';
-                    if (img.getAttribute('data-filter') == value.toLowerCase()) {
-                        img.style.display = 'block';
-                    }
-                }
-            })
+for (var i = 0; i < filter_btn.length; i++){
+    filter_btn[i].addEventListener("click", function () {
+        for (let j = 0; j < filter_btn.length; j++){
+            filter_btn[j].classList.remove("active");
         }
-});
+        this.classList.add("active");
+        let target = this.getAttribute("data-target");
+        for (let k = 0; i < parent_div.length; k++){
+            parent_div[k].style.display = "none";
+            if (target == parent_div[k].getAttribute("data-id")) {
+                parent_div[k].style.display = "block";
+            }
+            if (target == "all") {
+                parent_div[k].style.display = "block";
+            }
+        }
+    })
+}
+
 // product js end
+
