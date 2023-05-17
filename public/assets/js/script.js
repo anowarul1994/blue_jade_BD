@@ -13,6 +13,8 @@ $('.slider-wrapper').slick({
     nextArrow:'<div class="slick-arrow next"><span class="fa fa-angle-right"></span></div>',
 
 })
+//preload start
 $(window).on("load",function(){
   $("#preloader").fadeOut();
 });
+//preload end
