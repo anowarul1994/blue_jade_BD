@@ -18,7 +18,7 @@
      {{-- footer code start --}}
      @include('frontend.includes.footer')
      {{-- footer code end --}}
-
+        
     {{-- script code --}}
     @include('frontend.includes.script')
 </body>
