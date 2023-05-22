@@ -13,6 +13,13 @@ $('.slider-wrapper').slick({
     nextArrow:'<div class="slick-arrow next"><span class="fa fa-angle-right"></span></div>',
 
 })
+<<<<<<< HEAD
+//preload start
+$(window).on("load",function(){
+  $("#preloader").fadeOut();
+});
+//preload end
+=======
 
 $(window).on("load",function(){
   $("#preloader").fadeOut();
@@ -79,3 +86,4 @@ for (var i = 0; i < filter_btn.length; i++){
 
 // product js end
 
+>>>>>>> d9776f8235a07eeaadadf8527c198f0783269a85
