@@ -29,10 +29,10 @@
                                         </li>
                                     </ul>
                                     <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="tab-pane fade show active about-active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                             <p>VISION===Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam necessitatibus dicta dolores nulla voluptatem accusamus? Eum autem natus possimus!</p>
                                         </div>
-                                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <div class="tab-pane about-active fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                             <p>MISION===Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam necessitatibus dicta dolores nulla voluptatem accusamus? Eum autem natus possimus!</p>
                                         </div>
                                     </div>
@@ -144,19 +144,19 @@
     </div>
 
     <div class="container my-5">
-        <div class="about-profile">
+        <div class="about-profile-section">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="about-member-details">
-                        <div class="member-image">
+                        <div class="member-image-profile">
                             <img src="{{ asset('/assets/image/about/') }}/man1.png" alt="">
                         </div>
-                        <div class="about-details">
-                            <div class="member-data ">
+                        <div class="about-details-content">
+                            <div class="member-data-content ">
                                 <span>Chirman</span>
                                 <h3>Md.Lokan Hossaion</h3>
                            </div>
-                           <div class="member-email text-center">
+                           <div class="member-email-content text-center">
                                <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> sharifhossaion57@gmail.com</a>
                            </div>
                         </div>
@@ -164,15 +164,15 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="about-member-details">
-                        <div class="member-image">
+                        <div class="member-image-profile">
                             <img src="{{ asset('/assets/image/about/') }}/man4.png" alt="">
                         </div>
-                        <div class="about-details">
-                            <div class="member-data ">
+                        <div class="about-details-content">
+                            <div class="member-data-content ">
                                 <span>Chirman</span>
                                 <h3>Md.Lokan Hossaion</h3>
                            </div>
-                           <div class="member-email text-center">
+                           <div class="member-email-content text-center">
                                <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> sharifhossaion57@gmail.com</a>
                            </div>
                         </div>
@@ -180,68 +180,69 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="about-member-details">
-                        <div class="member-image">
-                            <img src="{{ asset('/assets/image/about/') }}/man5.png" alt="">
-                        </div>
-                        <div class="about-details">
-                            <div class="member-data ">
-                                <span>Chirman</span>
-                                <h3>Md.Lokan Hossaion</h3>
-                           </div>
-                           <div class="member-email text-center">
-                               <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> sharifhossaion57@gmail.com</a>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="about-member-details">
-                        <div class="member-image">
-                            <img src="{{ asset('/assets/image/about/') }}/man4.png" alt="">
-                        </div>
-                        <div class="about-details">
-                            <div class="member-data ">
-                                <span>Chirman</span>
-                                <h3>Md.Lokan Hossaion</h3>
-                           </div>
-                           <div class="member-email text-center">
-                               <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> sharifhossaion57@gmail.com</a>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="about-member-details">
-                        <div class="member-image">
-                            <img src="{{ asset('/assets/image/about/') }}/man3.png" alt="">
-                        </div>
-                        <div class="about-details">
-                            <div class="member-data ">
-                                <span>Chirman</span>
-                                <h3>Md.Lokan Hossaion</h3>
-                           </div>
-                           <div class="member-email text-center">
-                               <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> sharifhossaion57@gmail.com</a>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="about-member-details">
-                        <div class="member-image">
+                        <div class="member-image-profile">
                             <img src="{{ asset('/assets/image/about/') }}/man2.png" alt="">
                         </div>
-                        <div class="about-details">
-                            <div class="member-data ">
+                        <div class="about-details-content">
+                            <div class="member-data-content ">
                                 <span>Chirman</span>
                                 <h3>Md.Lokan Hossaion</h3>
                            </div>
-                           <div class="member-email text-center">
+                           <div class="member-email-content text-center">
                                <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> sharifhossaion57@gmail.com</a>
                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="about-member-details">
+                        <div class="member-image-profile">
+                            <img src="{{ asset('/assets/image/about/') }}/man5peg.jpeg" alt="">
+                        </div>
+                        <div class="about-details-content">
+                            <div class="member-data-content ">
+                                <span>Chirman</span>
+                                <h3>Md.Lokan Hossaion</h3>
+                           </div>
+                           <div class="member-email-content text-center">
+                               <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> sharifhossaion57@gmail.com</a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="about-member-details">
+                        <div class="member-image-profile">
+                            <img src="{{ asset('/assets/image/about/') }}/man5.png" alt="">
+                        </div>
+                        <div class="about-details-content">
+                            <div class="member-data-content ">
+                                <span>Chirman</span>
+                                <h3>Md.Lokan Hossaion</h3>
+                           </div>
+                           <div class="member-email-content text-center">
+                               <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> sharifhossaion57@gmail.com</a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="about-member-details">
+                        <div class="member-image-profile">
+                            <img src="{{ asset('/assets/image/about/') }}/man1.png" alt="">
+                        </div>
+                        <div class="about-details-content">
+                            <div class="member-data-content ">
+                                <span>Chirman</span>
+                                <h3>Md.Lokan Hossaion</h3>
+                           </div>
+                           <div class="member-email-content text-center">
+                               <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> sharifhossaion57@gmail.com</a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
