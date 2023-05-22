@@ -1,5 +1,13 @@
 <footer>
     <div class="container">
+
+        <div class="col-md-12 logo-box">
+            <div class="col-md-2">
+                <a href="#"><img src="{{ asset('/assets/image/Footer') }}/logo.png" height="80px"; width="80px"></a>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-8 scl-icon">
+
         <div class="row">
             <div class="col-md-4"><h2>GET IN TOUCH</h2>
                 <ul>
@@ -21,6 +29,7 @@
                 </ul></div>
             <div class="col-md-4">
                 <h2>QUICK LINKS</h2>
+
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>

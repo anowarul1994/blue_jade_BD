@@ -1,6 +1,8 @@
+
 <div class="container-fluid">
   preloader start
    {{-- <div id="preloader">
+
         <div class="preloader-logo">
          <svg
          width="100%" viewBox="0 0 1024 736" enable-background="new 0 0 1024 736" xml:space="preserve">
@@ -170,4 +172,4 @@
             </div>
           </nav>
        </header>
-</div> 
+
