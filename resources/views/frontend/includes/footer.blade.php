@@ -1,4 +1,4 @@
-<footer>        
+{{-- <footer>        
     <div class="footer-info">
         <div class="footer-width contact">
             <h2>GET IN TOUCH</h2>
@@ -66,4 +66,4 @@
             <a href="#">Teams & Condition | Contact</a>
         </div>
     </div>
-</footer>
+</footer> --}}
