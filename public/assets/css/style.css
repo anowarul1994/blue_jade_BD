@@ -32,7 +32,7 @@ body{
 
 
 /* Nav section code start */
-/*navbar start */
+
 #preloader{
     width:100%;
     height:100%;
@@ -57,7 +57,7 @@ body{
 
   #path_2{
     animation:animateTwo -1s linear 0.8s infinite alternate;
-  }
+  } 
   @keyframes animateOne {
       0%{
         opacity:0;
@@ -77,7 +77,7 @@ body{
         opacity:1;
         fill:red;
       }
-  }
+  } 
 
   .dropdown-menu{
     margin-top: 10px;
@@ -194,21 +194,21 @@ body{
   }
 
 .btn-danger{
-    margin-left: 11px; !important
-    padding: 4px; !important
+    margin-left: 11px !important;
+    padding: 4px !important;
 }
 .right-Manu{
- float: right; !important
+ float: right !important;
 }
-  .logo {
+.logo {
     height: 79px;
      width: 90px;
     float: left;
   }
-  .logo img{
+.logo img{
     width: 100%;
   }
-/*navbar End */
+
 /* Nav section code end */
 
 
@@ -221,7 +221,7 @@ body{
 .home-hero-area {
     height: 90vh;
     width: 100%;
-    margin-left: 98px;
+    /* margin-left: 98px; */
 }
 
 .bg-slider {
@@ -670,110 +670,65 @@ about profile section start*/
 /*about  section end*/
 
 /*product section start*/
-body{
-    height:100%;
-    background-color: #b2bec3;
-}
-.header{
-    font-size: 2rem;
-    color: darkcyan;
+
+.product-header{
+    font-size: 3rem;
+    color: var(--theme-secondary-color);
     margin-top: 20px;
     text-transform: uppercase;
     text-align: center;
-}
-.parent_div img{
-    top: 15px;
-    max-width: 100%;
-    min-width:100%;
-    box-shadow: 0px -9px 60px 33px rgba(0,0,0,0.1);
-    height:320px;
-    background-color: rgb(255, 255, 255);
-    margin: 10px;
-    position: relative;
-    padding: 20px;
-    border-radius: 5px;
-    transition: all.3s;
-    border: 2px solid rgba(44, 50, 81, 0.944);
-    overflow: hidden;
-    display: block;
-    display: flex;
-}
-.parent_div img:hover{
-scale: 1.1;
+    font-weight: 600;
 }
 
-.filter_btn{
-    top: 10px;
-    text-align: center;
+ .project-nav ul{
+    padding-top: 20px;
+    width: 100%;
     display: flex;
-    margin: auto;
-    padding: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
 }
-.filter_btn li{
-    list-style:none;
-    border: 1px solid rgb(83, 83, 83);
-    margin: 0 5px;
-    text-transform: uppercase;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 1rem;
-    font-weight: bold;
+.project-nav ul li{
+    list-style: none;
+    background-color:rgba(158, 137, 137, 0.504);
+    padding: 5px 10px;
     cursor: pointer;
+    margin: 0 5px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
 }
-.active {
-    background-color: darkcyan;
+.project-nav ul li.active{
+    background-color: var(--theme-color);
+    color: rgb(247, 246, 246);
     transition: all .3s;
-    letter-spacing: 2px;
 }
-.active:hover{
-    background-color: rgb(102, 94, 110);
-    color:rgb(255, 254, 254);
+.project-nav ul li.active:hover{
+    background-color:rgb(138, 105, 59);
+    color: aliceblue;
+    scale: 1.1;
 }
-/* //responsive */
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  
-   filter_btn{
-    top: 10px;
-    text-align: center;
-    display: flex;
-    margin: auto;
-    padding: 10px;
-}
-.filter_btn li{
-    list-style:none;
-    border: 1px solid rgb(83, 83, 83);
-    margin: 0 5px;
-    text-transform: uppercase;
+.product-card {
+    width: 100%;
+    margin: 10px 0;
+    background-color: var(--white-color);
     border-radius: 5px;
-    padding: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
 }
-.parent_div img{
-    top: 15px;
- 
-    box-shadow: 0px -9px 60px 33px rgba(0,0,0,0.1);
-    height:320px;
-    background-color: rgb(255, 255, 255);
-    margin: 10px;
-    position: relative;
-    padding: 20px;
+
+.product-card img{
+    width: 100%;
+    height: 320px;
+    padding:15px 10px;
+    border: 1px solid rgba(3, 3, 3, 0.795);
     border-radius: 5px;
     transition: all.3s;
-    border: 2px solid rgba(44, 50, 81, 0.944);
-    overflow: hidden;
-    display: block;
-    display: flex;
-}
-  
 }
 
-/*product section end*/
+.parent_div img:hover{
+    scale: 1.1;
+}
 
-
-/* footer start */
 
 
 a {
@@ -901,6 +856,7 @@ footer {
 }
 
 /* footer end */
+
 
 
 
@@ -1039,9 +995,14 @@ footer {
         .footer-info{
             flex-direction: column;
         }
+
+        .project-nav ul li {
+            margin: 5px 5px;
+            font-size: 1.2rem;
+        }
 	}
 
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 490px){
 
  /* slider code start */
     .home-hero-area{
@@ -1087,7 +1048,13 @@ footer {
         font-size: 14px;
         text-align: center;
     }
+
      /* slider code end */
+
+     .project-nav ul {
+        flex-wrap: wrap;
+        
+    }
 }
 
 

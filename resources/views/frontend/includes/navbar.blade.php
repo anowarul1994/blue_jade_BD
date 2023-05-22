@@ -1,6 +1,8 @@
-<!-- <div class="container-fluid">
-    {{-- preloader start --}}
-    <div id="preloader">
+
+<div class="container-fluid">
+  preloader start
+   {{-- <div id="preloader">
+
         <div class="preloader-logo">
          <svg
          width="100%" viewBox="0 0 1024 736" enable-background="new 0 0 1024 736" xml:space="preserve">
@@ -125,9 +127,9 @@
           z"/>
           </svg>
       </div>
-  </div>
+  </div>  --}}
       {{-- preloader end --}}
-        <div class="hero-social-elements d-none d-xxl-block">
+      <div class="hero-social-elements d-none d-xxl-block">
             <div class="flp-text">
                 <p>Follow Us</p>
              </div>
@@ -170,4 +172,4 @@
             </div>
           </nav>
        </header>
-</div> -->
+
