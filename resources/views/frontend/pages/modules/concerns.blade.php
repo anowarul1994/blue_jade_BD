@@ -1,10 +1,10 @@
 @extends('frontend.layouts.master')
 
-@section('page_title', 'Product')
+@section('page_title', 'Product Page')
 
 @section('content')
         
-   <section class="py-5 .bg-body-tertiary">
+   <section class="py-5 bg-body-secondary">
       <div class="container">
          <div class="row">
             <div class="col-md-12">
