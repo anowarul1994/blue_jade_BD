@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     {{-- preloader start --}}
     <div id="preloader">
         <div class="preloader-logo">
@@ -170,4 +170,4 @@
             </div>
           </nav>
        </header>
-</div>
+</div> -->

@@ -43,9 +43,10 @@
     </div>
     <div class="container">
         <div class="col-md-12 logo-box">
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <a href="#"><img src="{{ asset('/assets/image/Footer') }}/logo.png" height="80px"; width="80px"></a>
             </div>
+            <div class="col-md-2"></div>
             <div class="col-md-8 scl-icon">
                 <ul>
                     <li><i class="fab fa-facebook-f"></i></li>
