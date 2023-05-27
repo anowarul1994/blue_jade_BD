@@ -31,33 +31,33 @@
             <div class="row parent_div">
                <div class="col-md-4 col-lg-3 myImg" data-id="car">
                   <div class="product-card">
-                     <img src="{{ asset('/assets/image/product/') }}/car1.png" alt="">
+                     <img src="{{ asset('frontend/assets/image/product/') }}/car1.png" alt="">
                   </div>
                </div>
                <div class="col-md-4 col-lg-3"data-id="car" >
                   <div class="product-card">
-                     <img src="{{ asset('/assets/image/product/') }}/car2.png" alt="">
+                     <img src="{{ asset('frontend/assets/image/product/') }}/car2.png" alt="">
                   </div>
                </div>
                <div class="col-md-4 col-lg-3"data-id="car" >
                   <div class="product-card">
-                     <img src="{{ asset('/assets/image/product/') }}/ch3.png" alt="">
+                     <img src="{{ asset('frontend/assets/image/product/') }}/ch3.png" alt="">
                   </div>
                </div>
                <div class="col-md-4 col-lg-3"data-id="car" >
                   <div class="product-card">
-                     <img src="{{ asset('/assets/image/product/') }}/car4.png" alt="">
+                     <img src="{{ asset('frontend/assets/image/product/') }}/car4.png" alt="">
                   </div>
                </div>
                <!-- chair filter -->
                <div class="col-md-4 col-lg-3" data-id="chair">
                   <div class="product-card">
-                     <img src="{{ asset('/assets/image/product/') }}/ch1.png" alt="">
+                     <img src="{{ asset('frontend/assets/image/product/') }}/ch1.png" alt="">
                   </div>
                </div>
                <div class="col-md-4 col-lg-3" data-id="chair" >
                   <div class="product-card">
-                     <img src="{{ asset('/assets/image/product/') }}/ch2.png" alt="">
+                     <img src="{{ asset('frontend/assets/image/product/') }}/ch2.png" alt="">
                   </div>
                </div>
               
