@@ -1,4 +1,4 @@
-<div class="footer-section my-5">
+<div class="footer-section">
     <div class="container footer-top-section">
         <div class="row">
             <div class="col-md-5">
