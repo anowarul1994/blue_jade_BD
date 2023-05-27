@@ -31,3 +31,6 @@ Route::get('/concerns', function () {
 Route::get('/news', function () {
     return view('frontend.pages.modules.news');
 });
+Route::get('/dashboard', function () {
+    return view('backend.pages.index');
+});
