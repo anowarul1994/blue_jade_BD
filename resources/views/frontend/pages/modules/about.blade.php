@@ -9,7 +9,7 @@
                     <div class="col-lg-6 col-md-12 col-sm-12">
         
                         <div class="about-img-section">
-                            <img src="{{ asset('/assets/image/about/') }}/about-img.jpeg" alt="">
+                            <img src="{{ asset('frontend/assets/image/about/') }}/about-img.jpeg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
@@ -69,13 +69,13 @@
                     <div class="about-middle-img text-center">
                         <div class="about-top-img
                         ">
-                            <img src="{{ asset('/assets/image/about/') }}/p4.png" alt="">
+                            <img src="{{ asset('frontend/assets/image/about/') }}/p4.png" alt="">
                         </div>
                         <div class="about-border">
 
                         </div>
                         <div class="about-top-img">
-                            <img src="{{ asset('/assets/image/about/') }}/p4.png" alt="">
+                            <img src="{{ asset('frontend/assets/image/about/') }}/p4.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="about-member-details">
                         <div class="member-image-profile">
-                            <img src="{{ asset('/assets/image/about/') }}/man1.png" alt="">
+                            <img src="{{ asset('frontend/assets/image/about/') }}/man1.png" alt="">
                         </div>
                         <div class="about-details-content">
                             <div class="member-data-content ">
@@ -165,7 +165,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="about-member-details">
                         <div class="member-image-profile">
-                            <img src="{{ asset('/assets/image/about/') }}/man4.png" alt="">
+                            <img src="{{ asset('frontend/assets/image/about/') }}/man4.png" alt="">
                         </div>
                         <div class="about-details-content">
                             <div class="member-data-content ">
@@ -181,7 +181,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="about-member-details">
                         <div class="member-image-profile">
-                            <img src="{{ asset('/assets/image/about/') }}/man2.png" alt="">
+                            <img src="{{ asset('frontend/assets/image/about/') }}/man2.png" alt="">
                         </div>
                         <div class="about-details-content">
                             <div class="member-data-content ">
@@ -197,7 +197,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="about-member-details">
                         <div class="member-image-profile">
-                            <img src="{{ asset('/assets/image/about/') }}/man5peg.jpeg" alt="">
+                            <img src="{{ asset('frontend/assets/image/about/') }}/man5peg.jpeg" alt="">
                         </div>
                         <div class="about-details-content">
                             <div class="member-data-content ">
@@ -213,7 +213,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="about-member-details">
                         <div class="member-image-profile">
-                            <img src="{{ asset('/assets/image/about/') }}/man5.png" alt="">
+                            <img src="{{ asset('frontend/assets/image/about/') }}/man5.png" alt="">
                         </div>
                         <div class="about-details-content">
                             <div class="member-data-content ">
@@ -229,7 +229,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="about-member-details">
                         <div class="member-image-profile">
-                            <img src="{{ asset('/assets/image/about/') }}/man1.png" alt="">
+                            <img src="{{ asset('frontend/assets/image/about/') }}/man1.png" alt="">
                         </div>
                         <div class="about-details-content">
                             <div class="member-data-content ">
@@ -252,32 +252,32 @@
             <div class="row slider-logo">
                 <div class="col-lg-2 col-md-4 col-sm-6">
                     <div class="about-logo-img">
-                        <img src="{{ asset('/assets/image/about/') }}/logo4.png" alt="">
+                        <img src="{{ asset('frontend/assets/image/about/') }}/logo4.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6">
                     <div class="about-logo-img">
-                        <img src="{{ asset('/assets/image/about/') }}/logo5.png" alt="">
+                        <img src="{{ asset('frontend/assets/image/about/') }}/logo5.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6">
                     <div class="about-logo-img">
-                        <img src="{{ asset('/assets/image/about/') }}/logo2.png" alt="">
+                        <img src="{{ asset('frontend/assets/image/about/') }}/logo2.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6">
                     <div class="about-logo-img">
-                        <img src="{{ asset('/assets/image/about/') }}/logo3.png" alt="">
+                        <img src="{{ asset('frontend/assets/image/about/') }}/logo3.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6">
                     <div class="about-logo-img">
-                        <img src="{{ asset('/assets/image/about/') }}/logo4.png" alt="">
+                        <img src="{{ asset('frontend/assets/image/about/') }}/logo4.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6">
                     <div class="about-logo-img">
-                        <img src="{{ asset('/assets/image/about/') }}/logo5.png" alt="">
+                        <img src="{{ asset('frontend/assets/image/about/') }}/logo5.png" alt="">
                     </div>
                 </div>
             </div>

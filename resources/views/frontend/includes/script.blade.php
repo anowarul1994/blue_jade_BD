@@ -1,9 +1,9 @@
 <!--Jquery CDN-->
-<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+<script src="{{ asset('frontend/assets/js/jquery.min.js') }}"></script>
 <!-- Slick Slider JS CDN -->
-<script src="{{ asset('assets/js/slick.min.js') }}"></script>
+<script src="{{ asset('frontend/assets/js/slick.min.js') }}"></script>
 <!-- custom js -->
-<script src="{{ asset('assets/js/script.js') }}"></script>
+<script src="{{ asset('frontend/assets/js/script.js') }}"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

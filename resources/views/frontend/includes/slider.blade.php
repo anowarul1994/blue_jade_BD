@@ -2,7 +2,7 @@
      <div class="bg-slider">
          <div class="slider-wrapper">
              <div class="slide dark-layout">
-                 <img src="assets/image/banner/slide1.jpg" alt="">
+                 <img src="frontend/assets/image/banner/slide1.jpg" alt="">
              
                  <div class="text-content">
                      <h2 class="title"> Welcome to Blue Jade BD</h2>
@@ -14,7 +14,7 @@
                  </div>
              </div>
              <div class="slide dark-layout">
-                 <img src="assets/image/banner/slide2.jpg" alt="">
+                 <img src="frontend/assets/image/banner/slide2.jpg" alt="">
              
                  <div class="text-content">
                      <h2 class="title"> Welcome to Blue Jade BD</h2>
@@ -26,7 +26,7 @@
                  </div>
              </div>
              <div class="slide dark-layout">
-                 <img src="assets/image/banner/slide3.jpg" alt="">
+                 <img src="frontend/assets/image/banner/slide3.jpg" alt="">
              
                  <div class="text-content">
                      <h2 class="title"> Welcome to Blue Jade BD</h2>
