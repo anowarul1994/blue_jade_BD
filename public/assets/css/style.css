@@ -1001,29 +1001,50 @@ footer {
             font-size: 1.2rem;
         }
 	}
-<<<<<<< HEAD
-	
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
 /* ==========================footer start================= */
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+@media screen and (max-width:1192px){
+    .contact{
+        width: 35%;
+    }
+    .link{
+        width: 25%;
+    }
+    .about{
+        width: 25%;
+    }
 }
-body{
-    width: 100%;
-    color: white;
-    font-family: sans-serif;
-    position: relative;
-} */
+
+@media screen and (max-width:830px) {
+    .contact , .link , .about{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer-info{
+        flex-direction: column;
+    }
+    footer {
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .scl-icon ul li {
+        height: 35px !important;
+        width: 35px !important;
+        font-size: 17px !important;
+        line-height: 34px !important;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .logo-box {
+        display: block !important;
+    }   
+    .scl-icon ul li {
+        margin: auto !important;
+    }   
+}
 
 footer a {
     text-decoration: none;
@@ -1032,7 +1053,7 @@ footer a {
 }
 
 footer ul li {
-    list-style-type: none;
+    list-style: none;
 }
 
 footer {
@@ -1083,29 +1104,6 @@ footer {
 .about {
     width: 30%;
 }
-
-@media screen and (max-width:992px){
-    .contact{
-        width: 35%;
-    }
-    .link{
-        width: 25%;
-    }
-    .about{
-        width: 25%;
-    }
-}
-
-@media screen and (max-width:767px) {
-    .contact , .link , .about{
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    .footer-info{
-        flex-direction: column;
-    }
-}
-
 .logo-box{
     background-color: rgb(224, 168, 65);
     padding: 60px 20px;
@@ -1114,8 +1112,9 @@ footer {
 
 .scl-icon ul{
     display: flex;
-    justify-content: end;
+    justify-content: right;
     align-items: center;
+    padding: 20px 0;
 }
 .scl-icon ul li{
     position: relative;
@@ -1156,9 +1155,24 @@ footer {
     box-shadow: 0 3px white;
 
 }
-=======
->>>>>>> 3d2275323b2f8e30b8f2dddf92e5eb7800c31a90
-=======
+
+
+.copy-right{
+    padding: 15px 20px;
+    text-align: left;
+    display: flex;
+    background: #fff;
+    color: #000;
+}
+.copy-right a{
+    color: rgb(82, 8, 143);
+}
+.condition{
+    text-align: right;
+    padding: 20px 20px;
+}
+
+/* ==========================footer end================= */
 
 @media only screen and (max-width: 490px){
 
@@ -1214,11 +1228,3 @@ footer {
         
     }
 }
->>>>>>> be7e0b1d247f61b2cdcb333be66dafd1d76f4d1a
-
-
-
-<<<<<<< HEAD
-/* =======================footer end================== */
-=======
->>>>>>> 3d2275323b2f8e30b8f2dddf92e5eb7800c31a90
