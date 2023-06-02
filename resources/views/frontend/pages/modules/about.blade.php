@@ -146,103 +146,24 @@
     <div class="container my-5">
         <div class="about-profile-section">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="about-member-details">
-                        <div class="member-image-profile">
-                            <img src="{{ asset('frontend/assets/image/about/') }}/man1.png" alt="">
-                        </div>
-                        <div class="about-details-content">
-                            <div class="member-data-content ">
-                                <span>Chirman</span>
-                                <h3>Md.Lokan Hossaion</h3>
-                           </div>
-                           <div class="member-email-content text-center">
-                               <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> sharifhossaion57@gmail.com</a>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="about-member-details">
-                        <div class="member-image-profile">
-                            <img src="{{ asset('frontend/assets/image/about/') }}/man4.png" alt="">
-                        </div>
-                        <div class="about-details-content">
-                            <div class="member-data-content ">
-                                <span>Chirman</span>
-                                <h3>Md.Lokan Hossaion</h3>
-                           </div>
-                           <div class="member-email-content text-center">
-                               <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> sharifhossaion57@gmail.com</a>
-                           </div>
+                @foreach ($allAbouts as $row )
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="about-member-details">
+                            <div class="member-image-profile">
+                                <img src="{{ asset('/about/img/'.$row->img) }}" alt="">
+                            </div>
+                            <div class="about-details-content">
+                                <div class="member-data-content ">
+                                    <span>{{ $row->title }}</span>
+                                    <h3>{{$row->name}}</h3>
+                            </div>
+                            <div class="member-email-content text-center">
+                                <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> {{ $row->email }}</a>
+                            </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="about-member-details">
-                        <div class="member-image-profile">
-                            <img src="{{ asset('frontend/assets/image/about/') }}/man2.png" alt="">
-                        </div>
-                        <div class="about-details-content">
-                            <div class="member-data-content ">
-                                <span>Chirman</span>
-                                <h3>Md.Lokan Hossaion</h3>
-                           </div>
-                           <div class="member-email-content text-center">
-                               <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> sharifhossaion57@gmail.com</a>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="about-member-details">
-                        <div class="member-image-profile">
-                            <img src="{{ asset('frontend/assets/image/about/') }}/man5peg.jpeg" alt="">
-                        </div>
-                        <div class="about-details-content">
-                            <div class="member-data-content ">
-                                <span>Chirman</span>
-                                <h3>Md.Lokan Hossaion</h3>
-                           </div>
-                           <div class="member-email-content text-center">
-                               <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> sharifhossaion57@gmail.com</a>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="about-member-details">
-                        <div class="member-image-profile">
-                            <img src="{{ asset('frontend/assets/image/about/') }}/man5.png" alt="">
-                        </div>
-                        <div class="about-details-content">
-                            <div class="member-data-content ">
-                                <span>Chirman</span>
-                                <h3>Md.Lokan Hossaion</h3>
-                           </div>
-                           <div class="member-email-content text-center">
-                               <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> sharifhossaion57@gmail.com</a>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="about-member-details">
-                        <div class="member-image-profile">
-                            <img src="{{ asset('frontend/assets/image/about/') }}/man1.png" alt="">
-                        </div>
-                        <div class="about-details-content">
-                            <div class="member-data-content ">
-                                <span>Chirman</span>
-                                <h3>Md.Lokan Hossaion</h3>
-                           </div>
-                           <div class="member-email-content text-center">
-                               <a href="mailto:sharifhossaion57@gmail.com"> <span><i class="fa-solid fa-envelope"></i></span> sharifhossaion57@gmail.com</a>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
         </div>
     </div>
@@ -250,36 +171,13 @@
     <div class="container">
         <div class="about-logo">
             <div class="row slider-logo">
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="about-logo-img">
-                        <img src="{{ asset('frontend/assets/image/about/') }}/logo4.png" alt="">
+                @foreach ($allAbouts as $row)
+                    <div class="col-lg-3 col-md-4 col-sm-6 m-2">
+                        <div class="about-logo-img">
+                            <img style="width:100%; height:250px;" src="{{ asset('/about/logo/'.$row->logo) }}" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="about-logo-img">
-                        <img src="{{ asset('frontend/assets/image/about/') }}/logo5.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="about-logo-img">
-                        <img src="{{ asset('frontend/assets/image/about/') }}/logo2.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="about-logo-img">
-                        <img src="{{ asset('frontend/assets/image/about/') }}/logo3.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="about-logo-img">
-                        <img src="{{ asset('frontend/assets/image/about/') }}/logo4.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <div class="about-logo-img">
-                        <img src="{{ asset('frontend/assets/image/about/') }}/logo5.png" alt="">
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

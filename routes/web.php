@@ -1,36 +1,37 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-
+use App\Http\Controllers\backend\AboutController;
+use App\Http\Controllers\backend\BackendController;
+use App\Http\Controllers\frontend\FrontendController;
+use App\Http\Controllers\admin\AdminController;
 
 //demo route for frontend design
-Route::get('/', function () {
-    return view('frontend.pages.index');
-});
-Route::get('/about', function () {
-    return view('frontend.pages.modules.about');
-});
-Route::get('/contact', function () {
-    return view('frontend.pages.modules.contact');
-});
-Route::get('/concerns', function () {
-    return view('frontend.pages.modules.concerns');
-});
-Route::get('/news', function () {
-    return view('frontend.pages.modules.news');
-});
-Route::get('/dashboard', function () {
-    return view('backend.pages.index');
-});
+
+//bacekend controller Start
+Route::get('/admin/dashboard',[BackendController::class,'dashboard']);
+//bacekend controller end
+
+//Admin Controller Start 
+Route::get('/admin/login',[AdminController::class,'adminLogin']);
+Route::post('/login/admin',[AdminController::class,'loginAdmin']);
+//Admin Controller End 
+//Front ENd Controller Start 
+
+//Front ENd Controller ENd
+Route::get('/',[FrontendController::class,'homePage']);
+Route::get('/abouts',[AboutController::class,'abouts']);
+Route::get('/contact',[FrontendController::class,'contactPage']);
+Route::get('/concerns',[FrontendController::class,'concernsPage']);
+Route::get('/news',[FrontendController::class,'newsPage']);
+
+// About Controller Start
+
+Route::get('/about/create',[AboutController::class,'aboutCreate']);
+Route::post('/about/store',[AboutController::class,'aboutStore']);
+Route::get('/about/manage',[AboutController::class,'aboutManage']);
+Route::get('/about/edit/{id}',[AboutController::class,'aboutEdit']);
+Route::get('/about/delete/{id}',[AboutController::class,'aboutDelete']);
+Route::post('/about/update/{id}',[AboutController::class,'aboutUpdate']);
+
+// About Controller End
