@@ -8,19 +8,18 @@ use App\Models\About;
 
 class AboutController extends Controller
 {
+
     public function aboutCreate(){
         return view('backend.pages.about.create');
     }
-    public function abouts(){
-        return view('frontend.pages.modules.about');
-    }
+
     public function aboutStore(Request $request){
         $this->validate($request,[
             'title'=>'string|required',
             'name'=>'string|required',
             'email'=>'string|required',
-            'img'=>'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'logo'=>'required|image|mimes:jpeg,png,jpg,gif|max:2048'
+            'img'=>'required',
+            'logo'=>'required'
         ]);
     
         if($request->file('img')){
@@ -44,7 +43,7 @@ class AboutController extends Controller
         return redirect('/about/manage');
     }
     public function aboutManage(){
-        $aboutes = About::orderby('created_at','desc')->get();
+        $aboutes = About::orderby('created_at','desc')->paginate(5);
         return view('backend.pages.about.manage',compact('aboutes'));
     }
     public function aboutEdit($id){
@@ -84,6 +83,15 @@ class AboutController extends Controller
         return redirect('/about/manage');
 
     }
+
+
+
+    //frontend section About start
+    public function aboutpage(){
+        $allAbout = About::get();
+        return view('frontend.pages.modules.about',compact('allAbout'));
+    }
+    //frontend section About end
 
 }
 

@@ -146,7 +146,7 @@
     <div class="container my-5">
         <div class="about-profile-section">
             <div class="row">
-                @foreach ($allAbouts as $row )
+                @foreach ($allAbout as $row )
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="about-member-details">
                             <div class="member-image-profile">
@@ -171,10 +171,10 @@
     <div class="container">
         <div class="about-logo">
             <div class="row slider-logo">
-                @foreach ($allAbouts as $row)
+                @foreach ($allAbout as $logo)
                     <div class="col-lg-3 col-md-4 col-sm-6 m-2">
                         <div class="about-logo-img">
-                            <img style="width:100%; height:250px;" src="{{ asset('/about/logo/'.$row->logo) }}" alt="">
+                            <img style="width:100%; height:250px;" src="{{ asset('/about/logo/'.$logo->logo) }}" alt="">
                         </div>
                     </div>
                 @endforeach

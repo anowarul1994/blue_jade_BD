@@ -199,9 +199,9 @@
                   <ul class="filter_btn">
                       <li  class="active" data-target="all">All</li>
                       <li  data-target="car">Car</li>
-                      <li  data-target="chair">Chair</li>
-                      <li  data-target="shirt">Shirt</li>
-                      <li  data-target="phone">Phone</li>
+                      <li  data-target="motor">Motor</li>
+                      <li  data-target="sycle">Sycle</li>
+                      <li  data-target="honda">Honda</li>
                   </ul>
               </div>
             </div>
@@ -210,39 +210,34 @@
                 <!-- car filter -->
       
             <div class="row parent_div">
-               <div class="col-md-4 col-lg-3 myImg" data-id="car">
-                  <div class="product-card">
-                     <img src="{{ asset('frontend/assets/image/product/') }}/car1.png" alt="">
-                  </div>
-               </div>
-               <div class="col-md-4 col-lg-3"data-id="car" >
+               <div class="col-md-4 col-lg-3" data-id="car" >
                   <div class="product-card">
                      <img src="{{ asset('frontend/assets/image/product/') }}/car2.png" alt="">
                   </div>
                </div>
-               <div class="col-md-4 col-lg-3"data-id="car" >
+               <div class="col-md-4 col-lg-3" data-id="motor" >
                   <div class="product-card">
                      <img src="{{ asset('frontend/assets/image/product/') }}/ch3.png" alt="">
                   </div>
                </div>
-               <div class="col-md-4 col-lg-3"data-id="car" >
+               <div class="col-md-4 col-lg-3" data-id="honda" >
                   <div class="product-card">
                      <img src="{{ asset('frontend/assets/image/product/') }}/car4.png" alt="">
                   </div>
                </div>
                <!-- chair filter -->
-               <div class="col-md-4 col-lg-3" data-id="chair">
+               <div class="col-md-4 col-lg-3" data-id="sycle">
                   <div class="product-card">
                      <img src="{{ asset('frontend/assets/image/product/') }}/ch1.png" alt="">
                   </div>
                </div>
-               <div class="col-md-4 col-lg-3" data-id="chair" >
+               <div class="col-md-4 col-lg-3" data-id="car" >
                   <div class="product-card">
                      <img src="{{ asset('frontend/assets/image/product/') }}/ch2.png" alt="">
                   </div>
                </div>
               
-         </div>
+          </div>
       </div>    
    </section>
 <!--  Conncerns Section End-->
@@ -255,7 +250,8 @@
                     <div class="col-md-7">
                          <div class="form-section">
                               <h4>Get In Tuch</h4>
-                              <form action="" method="post">
+                              <form action="{{ url('/contact/store') }}" method="post">
+                                   @csrf
                                    <div class="row">
                                         <div class="col-md-6 form-input-section">
                                              <input type="text" name="name" class="form-control" placeholder="Enter Name">
@@ -272,7 +268,7 @@
                                              <input type="text" name="subject" class="form-control" placeholder="Enter Subject">
                                         </div>
                                    </div>
-                                   <textarea name="messag5" id="" cols="5" rows="8" class="form-control" placeholder="Enter Message"></textarea>
+                                   <textarea name="message" id="" cols="5" rows="8" class="form-control" placeholder="Enter Message"></textarea>
                                    <button type="submit" class="my-4 form-btn-type font-control btn btn-block btn-primary" style="width:100%" >Submit Now</button>
                               </form>
                          </div>

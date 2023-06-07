@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\backend\AboutController;
 use App\Http\Controllers\backend\BackendController;
 use App\Http\Controllers\frontend\FrontendController;
+use App\Http\Controllers\frontend\ContactController;
 use App\Http\Controllers\admin\AdminController;
 
 //demo route for frontend design
@@ -20,7 +21,7 @@ Route::post('/login/admin',[AdminController::class,'loginAdmin']);
 
 //Front ENd Controller ENd
 Route::get('/',[FrontendController::class,'homePage']);
-Route::get('/abouts',[AboutController::class,'abouts']);
+Route::get('/abouts',[AboutController::class,'aboutpage']);
 Route::get('/contact',[FrontendController::class,'contactPage']);
 Route::get('/concerns',[FrontendController::class,'concernsPage']);
 Route::get('/news',[FrontendController::class,'newsPage']);
@@ -35,3 +36,10 @@ Route::get('/about/delete/{id}',[AboutController::class,'aboutDelete']);
 Route::post('/about/update/{id}',[AboutController::class,'aboutUpdate']);
 
 // About Controller End
+
+//Contact Controller Start
+Route::post('/contact/store',[ContactController::class,'contactStore']);
+Route::get('/contact/manage',[ContactController::class,'contactManage']);
+//Contact Controller End
+
+

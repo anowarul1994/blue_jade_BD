@@ -46,6 +46,7 @@
                             </tbody>
                         </table>
                     </div>
+                    {{ $aboutes->links() }}
                 </div>
             </div>
         </div>

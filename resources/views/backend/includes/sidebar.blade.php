@@ -40,6 +40,44 @@
              </div>
          </div>
      </li>
+     <li class="nav-item">
+         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseContact"
+             aria-expanded="true" aria-controls="collapseTwo">
+             <i class="fas fa-fw fa-cog"></i>
+             <span>Contact</span>
+         </a>
+         <div id="collapseContact" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+             <div class="bg-white py-2 collapse-inner rounded">
+                 <a class="collapse-item" href="{{ url('/contact/manage') }}">About Create</a>
+             </div>
+         </div>
+     </li>
+     <li class="nav-item">
+         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseConcernsCatagory"
+             aria-expanded="true" aria-controls="collapseTwo">
+             <i class="fas fa-fw fa-cog"></i>
+             <span>Concrens Category</span>
+         </a>
+         <div id="collapseConcernsCatagory" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+             <div class="bg-white py-2 collapse-inner rounded">
+                 <a class="collapse-item" href="{{ url('/concerns/category/create') }}">Create</a>
+                 <a class="collapse-item" href="{{ url('/concerns/category/manage') }}">Manage</a>
+             </div>
+         </div>
+     </li>
+     <li class="nav-item">
+         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseConcernsSubatagory"
+             aria-expanded="true" aria-controls="collapseTwo">
+             <i class="fas fa-fw fa-cog"></i>
+             <span>Concrens Subcategory</span>
+         </a>
+         <div id="collapseConcernsSubatagory" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+             <div class="bg-white py-2 collapse-inner rounded">
+                 <a class="collapse-item" href="{{ url('/concerns/subcategory/create') }}">Create</a>
+                 <a class="collapse-item" href="{{ url('/concerns/subcategory/manage') }}">Manage</a>
+             </div>
+         </div>
+     </li>
 
      <!-- Nav Item - Utilities Collapse Menu -->
 

@@ -1,3 +1,4 @@
+    <!-- 
 <div class="footer-section">
     <div class="container footer-top-section">
         <div class="row">
@@ -36,7 +37,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="container">
+<div class="container">
         <div class="footer-bottom-section">
             <div class="row">
                 <div class="col-md-1"></div>
