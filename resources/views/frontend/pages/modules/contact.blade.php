@@ -9,7 +9,8 @@
                <div class="col-md-7">
                     <div class="form-section">
                          <h4>Get In Tuch</h4>
-                         <form action="" method="post">
+                         <form action="{{ url('/contact/store') }}" method="post">
+                              @csrf
                               <div class="row">
                                    <div class="col-md-6 form-input-section">
                                         <input type="text" name="name" class="form-control" placeholder="Enter Name">
@@ -26,7 +27,7 @@
                                         <input type="text" name="subject" class="form-control" placeholder="Enter Subject">
                                    </div>
                               </div>
-                              <textarea name="messag5" id="" cols="5" rows="8" class="form-control" placeholder="Enter Message"></textarea>
+                              <textarea name="message" id="" cols="5" rows="8" class="form-control" placeholder="Enter Message"></textarea>
                               <button type="submit" class="my-4 form-btn-type font-control btn btn-block btn-primary" style="width:100%" >Submit Now</button>
                          </form>
                     </div>

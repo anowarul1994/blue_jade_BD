@@ -185,7 +185,7 @@
 <!---About Area Seciton end-->
 
 <!--  Conncerns Section Start-->
-     <section class="py-5 bg-body-secondary">
+<section class="py-5 bg-body-secondary">
       <div class="container">
          <div class="row">
             <div class="col-md-12">
@@ -199,9 +199,9 @@
                   <ul class="filter_btn">
                       <li  class="active" data-target="all">All</li>
                       <li  data-target="car">Car</li>
-                      <li  data-target="motor">Motor</li>
-                      <li  data-target="sycle">Sycle</li>
-                      <li  data-target="honda">Honda</li>
+                      <li  data-target="chair">Chair</li>
+                      <li  data-target="shirt">Shirt</li>
+                      <li  data-target="phone">Phone</li>
                   </ul>
               </div>
             </div>
@@ -210,34 +210,59 @@
                 <!-- car filter -->
       
             <div class="row parent_div">
-               <div class="col-md-4 col-lg-3" data-id="car" >
+               <div class="col-md-4 col-lg-3 myImg" data-id="car">
+                  <div class="product-card">
+                     <img src="{{ asset('frontend/assets/image/product/') }}/car1.png" alt="">
+                  </div>
+               </div>
+               <div class="col-md-4 col-lg-3"data-id="car" >
                   <div class="product-card">
                      <img src="{{ asset('frontend/assets/image/product/') }}/car2.png" alt="">
                   </div>
                </div>
-               <div class="col-md-4 col-lg-3" data-id="motor" >
+               <div class="col-md-4 col-lg-3"data-id="car" >
                   <div class="product-card">
                      <img src="{{ asset('frontend/assets/image/product/') }}/ch3.png" alt="">
                   </div>
                </div>
-               <div class="col-md-4 col-lg-3" data-id="honda" >
+               <div class="col-md-4 col-lg-3"data-id="car" >
                   <div class="product-card">
                      <img src="{{ asset('frontend/assets/image/product/') }}/car4.png" alt="">
                   </div>
                </div>
                <!-- chair filter -->
-               <div class="col-md-4 col-lg-3" data-id="sycle">
+               <div class="col-md-4 col-lg-3" data-id="chair">
                   <div class="product-card">
                      <img src="{{ asset('frontend/assets/image/product/') }}/ch1.png" alt="">
                   </div>
                </div>
-               <div class="col-md-4 col-lg-3" data-id="car" >
+               <div class="col-md-4 col-lg-3" data-id="chair" >
+                  <div class="product-card">
+                     <img src="{{ asset('frontend/assets/image/product/') }}/ch2.png" alt="">
+                  </div>
+               </div>
+               <div class="col-md-4 col-lg-3" data-id="chair" >
+                  <div class="product-card">
+                     <img src="{{ asset('frontend/assets/image/product/') }}/ch2.png" alt="">
+                  </div>
+               </div>
+               <div class="col-md-4 col-lg-3" data-id="shirt" >
+                  <div class="product-card">
+                     <img src="{{ asset('frontend/assets/image/product/') }}/ch2.png" alt="">
+                  </div>
+               </div>
+               <div class="col-md-4 col-lg-3" data-id="shirt" >
+                  <div class="product-card">
+                     <img src="{{ asset('frontend/assets/image/product/') }}/ch2.png" alt="">
+                  </div>
+               </div>
+               <div class="col-md-4 col-lg-3" data-id="phone" >
                   <div class="product-card">
                      <img src="{{ asset('frontend/assets/image/product/') }}/ch2.png" alt="">
                   </div>
                </div>
               
-          </div>
+         </div>
       </div>    
    </section>
 <!--  Conncerns Section End-->
