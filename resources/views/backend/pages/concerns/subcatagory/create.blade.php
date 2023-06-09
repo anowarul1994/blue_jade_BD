@@ -12,13 +12,13 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <form action="{{ url('/concerns/subcatagory/store') }}" method="post" enctype="multipart/form-data">
+                        <form action="{{ url('/concerns/subcategory/store') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
-                                <label for="">Catagory_id</label>
-                                <select name="concernscategory_id" id="" class="form-control">
+                                <label for="">Color_id</label>
+                                <select name="color_id" id="" class="form-control">
                                     <option value="">choose your option</option>
-                                    @foreach ($concernssubcategory as $row)
+                                    @foreach ($colors as $row)
                                     <option value="{{ $row->id }}">{{ $row->data_target }}</option> 
                                     @endforeach
                                     @error('concernscategory_id')

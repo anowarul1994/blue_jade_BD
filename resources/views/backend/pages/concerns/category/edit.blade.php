@@ -8,15 +8,15 @@
                     <div class="card-header">
                         <div class="d-flex justify-content-between">
                             <a href="" class="btn btn-dark">Back</a>
-                            <a href="{{ url('/about/manage') }}" class="btn btn-success">About Manage</a>
+                            <a href="{{ url('/concerns/category/manage') }}" class="btn btn-success">Color Manage</a>
                         </div>
                     </div>
                     <div class="card-body">
-                        <form action="{{ url('/concerns/category/update',$concernsCatagoryedit->id) }}" method="post">
+                        <form action="{{ url('/concerns/category/update',$colorEdit->id) }}" method="post">
                             @csrf
                             <div class="form-group">
                                 <label for="">Name</label>
-                                <input type="text" value="{{ $concernsCatagoryedit->name }}" name="name" class="form-control" placeholder="Enter Name">
+                                <input type="text" value="{{ $colorEdit->name }}" name="name" class="form-control" placeholder="Enter Name">
                                 @error('name')
                                 <p class="text-danger mb-0"><small><i class="fa-solid fa-triangle-exclamation"></i> {{ $message }}</small></p> <br>
                                 @enderror
@@ -29,7 +29,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="">data_target</label>
-                                <input type="text" value="{{ $concernsCatagoryedit->data_target }}" name="data_target" placeholder="Enter Data Target" class="form-control">
+                                <input type="text" value="{{ $colorEdit->data_target }}" name="data_target" placeholder="Enter Data Target" class="form-control">
                                 @error('data_target')
                                 <p class="text-danger mb-0"><small><i class="fa-solid fa-triangle-exclamation"></i> {{ $message }}</small></p> <br>
                                 @enderror

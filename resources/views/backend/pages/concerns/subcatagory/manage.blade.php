@@ -21,23 +21,23 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($concernssubcategoresManage as $row)
+                            @foreach ($sizeManage as $row)
                             <tr>
                                 <th scope="row">{{ $loop->index+1 }}</th>
-                                <td>{{$row->concernscategory_id}}</td>
+                                <td>{{$row->color->data_target}}</td>
                                 <td>
-                                    <img style="border-radius:50%;" height="70" width="70" src="{{ asset('/concerns/subcatagory/'.$row->image) }}" alt="">
+                                    <img style="border-radius:50%;" height="70" width="70" src="{{ asset('/size/'.$row->image) }}" alt="">
                                 </td>
                                 <td> 
-                                    <a href="{{ url('/concerns/subcatagory/edit',$row->id) }}" class="btn btn-primary">Edit</a>
-                                    <a href="{{ url('/concerns/subcatagory/delete',$row->id) }}" class="btn btn-danger" onclick="return confirm('Are You Sure ?')">Delete</a>
+                                    <a href="{{ url('/concerns/subcatagory/edit',$row->id) }}" class="btn btn-primary"><i class="fa-solid fa-pen"></i></a>
+                                    <a href="{{ url('/concerns/subcatagory/delete',$row->id) }}" class="btn btn-danger" onclick="return confirm('Are You Sure ?')"><i class="fa-solid fa-trash"></i></a>
                                 </td>
                             </tr> 
                             @endforeach
                         </tbody>
                     </table>
                 </div>
-                {{ $concernssubcategoresManage->links() }}
+                {{ $sizeManage->links() }}
             </div>
         </div>
     </div>

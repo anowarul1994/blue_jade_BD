@@ -12,25 +12,25 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <form action="{{ url('/concerns/subcatagory/update/'.$concernsSubcategoryEditpage->id) }}" method="post" enctype="multipart/form-data">
+                        <form action="{{ url('/concerns/subcatagory/update/'.$sizeEdit->id) }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
                                 <label for="">Catagory_id</label>
-                                <select name="concernscategory_id" id="" class="form-control">
+                                <select name="color_id" id="" class="form-control">
                                     <option value="">choose your option</option>
-                                    @foreach ($concernssubcategorys as $row)
+                                    @foreach ($colorsEdit as $row)
                                     <option value="{{ $row->id }}">{{ $row->data_target }}</option> 
                                     @endforeach
-                                    @error('concernscategory_id')
+                                    @error('color_id')
                                     <p class="text-danger mb-0"><small><i class="fa-solid fa-triangle-exclamation"></i> {{ $message }}</small></p> <br>
                                     @enderror
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label for="">image</label>
-                                <input type="file" name="img" class="form-control">
-                                <img width="80" height="80" class="py-2" src="{{ asset('/concerns/subcatagory/'.$concernsSubcategoryEditpage->image) }}" alt="">
-                                @error('img')
+                                <input type="file" name="image" class="form-control">
+                                <img width="80" height="80" class="py-2" src="{{ asset('/size/'.$sizeEdit->image) }}" alt="">
+                                @error('image')
                                 <p class="text-danger mb-0"><small><i class="fa-solid fa-triangle-exclamation"></i> {{ $message }}</small></p> <br>
                                 @enderror
                             </div>

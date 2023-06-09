@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\backend\AboutController;
 use App\Http\Controllers\backend\BackendController;
+use App\Http\Controllers\backend\ColorController;
+use App\Http\Controllers\backend\SizeController;
 use App\Http\Controllers\frontend\FrontendController;
 use App\Http\Controllers\frontend\ContactController;
 use App\Http\Controllers\admin\AdminController;
@@ -41,5 +43,24 @@ Route::post('/about/update/{id}',[AboutController::class,'aboutUpdate']);
 Route::post('/contact/store',[ContactController::class,'contactStore']);
 Route::get('/contact/manage',[ContactController::class,'contactManage']);
 //Contact Controller End
+
+
+//Concerns Catagory Create ENd
+    Route::get('/concerns/category/create',[ColorController::class,'colorCreate']);
+    Route::post('/concerns/category/store',[ColorController::class,'colorStore']);
+    Route::get('/concerns/category/manage',[ColorController::class,'colorManage']);
+    Route::get('/concerns/category/delete/{id}',[ColorController::class,'colorDelete']);
+    Route::get('/concerns/category/edit/{id}',[ColorController::class,'colorEdit']);
+    Route::post('/concerns/category/update/{id}',[ColorController::class,'colorUpdate']);
+//Concerns Catagory Create End
+
+//concerns Size controller Start
+    Route::get('/concerns/subcategory/create',[SizeController::class,'sizeCreate']);
+    Route::post('/concerns/subcategory/store',[SizeController::class,'sizeStoreBack']);
+    Route::get('/concerns/subcategory/manage',[SizeController::class,'sizeManage']);
+    Route::get('/concerns/subcatagory/edit/{id}',[SizeController::class,'sizeEdit']);
+    Route::get('/concerns/subcatagory/delete/{id}',[SizeController::class,'sizeDelete']);
+    Route::post('/concerns/subcatagory/update/{id}',[SizeController::class,'sizeUpdate']);
+//concerns Size controller ENd
 
 

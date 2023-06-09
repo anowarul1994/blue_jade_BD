@@ -7,7 +7,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between">
                             <a href="" class="btn btn-dark">Back</a>
-                            <a href="{{ url('/concerns/category/create') }}" class="btn btn-success">About Manage</a>
+                            <a href="{{ url('/concerns/category/create') }}" class="btn btn-success">About Create</a>
                         </div>
                     </div>
                     <div class="card-header">
@@ -21,14 +21,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($concernsCatagoryManag as $row)
+                                @foreach ($colorManage as $row)
                                     <tr>
                                         <th scope="row">{{ $loop->index+1 }}</th>
                                         <td>{{ $row->name }}</td>
                                         <td>{{ $row->data_target }}</td>
                                         <td>
-                                            <a href="{{ url('/concerns/category/edit',$row->id) }}" class="btn btn-md btn-primary">Edit</a>
-                                            <a onclick="return confirm('Are You Sure ?')" href="{{ url('/concerns/category/delete',$row->id) }}" class="btn btn-md btn-danger">delete</a>
+                                            <a href="{{ url('/concerns/category/edit',$row->id) }}" class="btn btn-md btn-primary"><i class="fa-solid fa-pen"></i></a>
+                                            <a onclick="return confirm('Are You Sure ?')" href="{{ url('/concerns/category/delete',$row->id) }}" class="btn btn-md btn-danger"><i class="fa-solid fa-trash"></i></a>
                                         </td>
                                     </tr>
                                 @endforeach

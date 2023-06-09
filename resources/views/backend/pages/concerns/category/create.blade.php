@@ -22,12 +22,6 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <input type="hidden" name="slug" class="form-control" placeholder="Enter slug">
-                                @error('slug')
-                                <p class="text-danger mb-0"><small><i class="fa-solid fa-triangle-exclamation"></i> {{ $message }}</small></p> <br>
-                                @enderror
-                            </div>
-                            <div class="form-group">
                                 <label for="">data_target</label>
                                 <input type="text" name="data_target" placeholder="Enter Data Target" class="form-control">
                                 @error('data_target')
