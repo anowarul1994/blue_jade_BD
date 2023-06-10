@@ -154,20 +154,14 @@
             </button>
             <div class="collapse navbar-collapse m-lg-auto " id="btn">
               <ul class="navbar-nav m-lg-auto d-flex right-Manu">
-                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Contact</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#" class="dropdown-item">Item-1</a></li>
-                      <li><a href="#" class="dropdown-item">T-Shirt</a></li>
-                      <li><a href="#" class="dropdown-item">T-Shirt</a></li>
-                      <li><a href="#" class="dropdown-item">T-Shirt</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item btn btn-danger">
-                    <a class="nav-link" href="#">Our Product</a>
-                  </li>
+                <li class="nav-item active"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url('/abouts')}}">About</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
+                </li>
+                <li class="nav-item btn btn-danger">
+                    <a class="nav-link" href="{{ url('/concerns') }}">Our Product</a>
+                </li>
               </ul>
             </div>
           </nav>
