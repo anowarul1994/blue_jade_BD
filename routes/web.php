@@ -5,6 +5,7 @@ use App\Http\Controllers\backend\AboutController;
 use App\Http\Controllers\backend\BackendController;
 use App\Http\Controllers\backend\ColorController;
 use App\Http\Controllers\backend\SizeController;
+use App\Http\Controllers\backend\ContactinfoController;
 use App\Http\Controllers\frontend\FrontendController;
 use App\Http\Controllers\frontend\ContactController;
 use App\Http\Controllers\admin\AdminController;
@@ -42,7 +43,16 @@ Route::post('/about/update/{id}',[AboutController::class,'aboutUpdate']);
 //Contact Controller Start
 Route::post('/contact/store',[ContactController::class,'contactStore']);
 Route::get('/contact/manage',[ContactController::class,'contactManage']);
+Route::get('/contact/delete/{id}',[ContactController::class,'contactDelete']);
 //Contact Controller End
+//Contact Info Controller Start
+Route::get('/comphany/info/create',[ContactinfoController::class,'contactInfoCreate']);
+Route::post('/comphany/info/store',[ContactinfoController::class,'contactInfoStore']);
+Route::get('/comphany/info/manage',[ContactinfoController::class,'contactInfoManage']);
+Route::get('/comphany/info/delete/{id}',[ContactinfoController::class,'contactInfoDelete']);
+Route::get('/comphany/info/edit/{id}',[ContactinfoController::class,'contactInfoEdit']);
+Route::post('/comphany/info/update/{id}',[ContactinfoController::class,'contactInfoUpdate']);
+//Contact Info Controller End
 
 
 //Concerns Catagory Create ENd

@@ -16,7 +16,10 @@
                                 <th scope="col">Email</th>
                                 <th scope="col">Pnone</th>
                                 <th scope="col">Subject</th>
+                                <th scope="col">Address</th>
                                 <th scope="col">Message</th>
+                                <th scope="col">Action</th>
+
                             </tr>
                         </thead>
                         <tbody>734346
@@ -27,7 +30,11 @@
                                 <td>{{ $row->email }}</td>
                                 <td>{{ $row->phone }}</td>
                                 <td>{{ $row->subject }}</td>
+                                <td>{{ $row->address }}</td>
                                 <td>{{ $row->message }}</td>
+                                <td>
+                                    <a href="{{ url('/contact/delete',$row->id) }}" class="btn btn-danger" onclick="confirm('Are You Sure ?')"><i class="fa-solid fa-trash"></i></a>
+                                </td>
                             </tr>
                             @endforeach
                         </tbody>

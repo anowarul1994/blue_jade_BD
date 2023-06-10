@@ -26,6 +26,9 @@
                                    <div class="col-md-6 form-input-section">
                                         <input type="text" name="subject" class="form-control" placeholder="Enter Subject">
                                    </div>
+                                   <div class="col-md-12 form-input-section">
+                                        <input type="text" class="form-control" name="address" placeholder="Enter Address">
+                                   </div>
                               </div>
                               <textarea name="message" id="" cols="5" rows="8" class="form-control" placeholder="Enter Message"></textarea>
                               <button type="submit" class="my-4 form-btn-type font-control btn btn-block btn-primary" style="width:100%" >Submit Now</button>
@@ -37,35 +40,43 @@
                          <h4>Contact Info</h4>
                          <div class="contact-details d-flex">
                               <div class="contact-icon mr-2">
-                                   <a href="mailto:sharifhossaion51@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                                   <a href="#"><i class="fa-solid fa-envelope"></i></a>
                               </div>
                               <div class="contact-content">
                                    <span>Email Us</span> <br>
-                                   <a href="mailto:sharifhossaion51@gmail.com">sharifhossaion51@gmail.com</a>
+                                   @foreach ($allContactInfo as $row)
+                                   <a href="mailto:{{ $row->email }}">{{  $row->email }}</a>
+                                   @endforeach
                               </div>
                          </div>
                          <div class="contact-details d-flex">
                               <div class="contact-icon mr-2">
-                                   <a href="mailto:sharifhossaion51@gmail.com"><i class="fa-solid fa-phone"></i></a>
+                                   <a href="#"><i class="fa-solid fa-phone"></i></a>
                               </div>
                               <div class="contact-content">
                                    <span>Call Us</span> <br>
-                                   <a href="tel:01789979216">+8801789979216</a>
+                                   @foreach ($allContactInfo as $row)
+                                   <a href="tel:{{ $row->phone }}">+{{ $row->phone }}</a>
+                                   @endforeach
                               </div>
                          </div>
                          <div class="contact-details d-flex">
                               <div class="contact-icon mr-2">
-                                   <a href="mailto:sharifhossaion51@gmail.com"><i class="fa-solid fa-location-dot"></i></a>
+                                   <a href="#"><i class="fa-solid fa-location-dot"></i></a>
                               </div>
                               <div class="contact-content">
                                    <span>Location - Head Office</span> <br>
-                                   <p>HOUSE 20, ROAD 1/A SECTOR 9, DHAKA 1230.</p>
+                                   @foreach ($allContactInfo as $row)
+                                   <p>{{ $row->location }}</p>  
+                                   @endforeach
                               </div>
                          </div>
                          <div class="contact-details">
                               <div class="contact-content">
                                    <span class="lead">Location-Factory</span>
-                                   <p>MOUCHAK (1751), KALIAKAIR. GAZIPUR, DHAKA, BANGLADESH</p>
+                                   @foreach ($allContactInfo as $row)
+                                   <p>{{ $row->location }}</p>  
+                                   @endforeach
                               </div>
                          </div>
                     </div>
