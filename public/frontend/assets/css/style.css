@@ -57,7 +57,7 @@ body{
 
   #path_2{
     animation:animateTwo -1s linear 0.8s infinite alternate;
-  } 
+  }
   @keyframes animateOne {
       0%{
         opacity:0;
@@ -77,7 +77,7 @@ body{
         opacity:1;
         fill:red;
       }
-  } 
+  }
 
   .dropdown-menu{
     margin-top: 10px;
@@ -216,10 +216,10 @@ body{
 
 
 
-/* slider scetion code start */
+/* slider section code start */
 
 .home-hero-area {
-    height: 90vh;
+    height: 94vh;
     width: 100%;
     /* margin-left: 98px; */
 }
@@ -228,19 +228,19 @@ body{
     z-index: 777;
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 94vh;
 }
 
 .bg-slider .slide{
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 94vh;
 
 }
 
 .bg-slider .slide img{
     width: 100%;
-    height: 90vh;
+    height: 94vh;
     object-fit: cover;
     background-position: center;
     background-size: cover;
@@ -288,6 +288,9 @@ body{
     line-height: 25px;
     margin-bottom: 15px;
 
+}
+.container-fluid{
+    padding: 0 !important;
 }
 
 .slick-active .text-content p{
@@ -351,7 +354,7 @@ body{
     height: 100vh;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
 }
 
  .bg-slider .slider-wrapper{
@@ -461,7 +464,7 @@ img{
 .about-contact {
 	padding: 6px 0;
     text-align: right;
-    
+
 }
 .about-contact span{
     color: #ed1b24;
@@ -547,7 +550,7 @@ img{
 	font-size: 18px;
 	text-transform: uppercase;
 }
-/* 
+/*
 about profile section start*/
 .about-profile-section{
     text-align: center;
@@ -672,7 +675,7 @@ about profile section start*/
 .member-image-profile img{
     margin: 1rem;
     width: 100%;
-  
+
 }
 
 .about-logo-img img{
@@ -843,7 +846,7 @@ a {
     transition: 0.5s;
 }
 
-.scl-icon ul li:hover:before{ 
+.scl-icon ul li:hover:before{
     box-shadow: 3px white;
 }
 .scl-icon ul li:hover{
@@ -957,7 +960,7 @@ a {
     background-color: #F8F9FC;
     padding: 0 !important;
     margin: 0 !important;
-  }  
+  }
   .form-section{
     background-color: white;
     width: 100%;
@@ -1114,7 +1117,7 @@ a {
     }
 
      /* slider code end */
-   
+
   	.about-middle-img{
 		display: none;
 		position: absolute;
@@ -1176,7 +1179,7 @@ a {
         padding: 5px 0;
     }
 /* contact-section-end */
- 
+
 
 
 }
@@ -1286,7 +1289,7 @@ a {
 
      .project-nav ul {
         flex-wrap: wrap;
-        
+
     }
 }
 
