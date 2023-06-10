@@ -7,7 +7,7 @@
                 <div class="card-header">
                     <div class="d-flex justify-content-between">
                         <a href="" class="btn btn-dark">Back</a>
-                        <a href="" class="btn btn-success">Contactinfo Create</a>
+                        <a href="{{ url('/comphany/info/create') }}" class="btn btn-success">Contactinfo Create</a>
                     </div>
                 </div>
                 <div class="card-body">

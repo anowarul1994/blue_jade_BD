@@ -8,7 +8,7 @@
                     <div class="card-header">
                         <div class="d-flex justify-content-between">
                             <a href="" class="btn btn-dark">Back</a>
-                            <a href="" class="btn btn-success">Contactinfo Manage</a>
+                            <a href="{{ url('/comphany/info/manage') }}" class="btn btn-success">Contactinfo Manage</a>
                         </div>
                     </div>
                     <div class="card-body">
