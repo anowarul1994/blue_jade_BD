@@ -3,7 +3,7 @@
          <div class="slider-wrapper">
              @foreach($sliders as $slider)
              <div class="slide dark-layout">
-                 <img src="{{asset('banner_img/'.$slider->photo)}}" alt="Banner">
+                 <img src="{{asset('image/banner_img/'.$slider->photo)}}" alt="Banner">
 
                  <div class="text-content">
                      <h2 class="title"> {{$slider->title}}</h2>

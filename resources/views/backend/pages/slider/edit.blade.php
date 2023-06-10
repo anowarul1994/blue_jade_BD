@@ -53,7 +53,7 @@
                             <div class="form-group">
                                 <label for="photo">Photo</label>
                                 <input type="file" name="photo" class="form-control">
-                                <img class="img-thumbnail" width="300px" src="{{ asset("banner_img/".$sliders->photo) }}" alt="banner">
+                                <img class="img-thumbnail" width="300px" src="{{ asset("image/banner_img/".$sliders->photo) }}" alt="banner">
                                 @error('photo')
                                 <p class="text-danger mb-0"><small><i class="fa-solid fa-triangle-exclamation"></i> {{ $message }}</small></p> <br>
                                 @enderror

@@ -32,7 +32,7 @@
                                     <td class="align-middle">{{ $slider->status == 1 ? 'Active':'Deactive' }}</td>
                                     <td class="align-middle">{{ $slider->order_by }}</td>
                                     <td class="align-middle">
-                                        <img width="60" height="60" Style="border-radius:50%;" src="{{ asset('banner_img/'.$slider->photo)}}" alt="">
+                                        <img width="60" height="60" Style="border-radius:50%;" src="{{ asset('image/banner_img/'.$slider->photo)}}" alt="">
                                     </td>
 
                                     <td class="align-middle" >
