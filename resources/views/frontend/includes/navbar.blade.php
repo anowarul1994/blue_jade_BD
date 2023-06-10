@@ -160,7 +160,7 @@
                     <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
                 </li>
                 <li class="nav-item btn btn-danger">
-                    <a class="nav-link" href="{{ url('/concerns') }}">Our Product</a>
+                    <a class="nav-link" href="{{ url('/concern') }}">Our Product</a>
                 </li>
               </ul>
             </div>

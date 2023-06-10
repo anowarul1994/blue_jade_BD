@@ -24,8 +24,11 @@ class FrontendController extends Controller
 
         return view('frontend.pages.modules.contact',compact('allContactInfo'));
     }
-    public function concernsPage(){
-        return view('frontend.pages.modules.concerns');
+    public function concernPage(){
+        $allSize = Size::with('color')->orderby('created_at','desc')->get();
+        $allColor = Color::get();
+
+        return view('frontend.pages.modules.concerns',compact('allSize','allColor'));
     }
     // public function newsPage(){
     //     return view('frontend.pages.modules.news');
