@@ -1,12 +1,7 @@
 @extends('backend.layouts.master')
-@section('page_title', 'Create About')
 @section('content')
-
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h1>@yield('page_title')</h1>
-            </div>
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <div class="card">
@@ -17,45 +12,51 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <form action="{{ url('/about/store') }}" method="post"  enctype="multipart/form-data">
+                        <form action="{{ route('sliders.store') }}" method="post"  enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
-                                <label for="">Title</label>
+                                <label for="title">Title</label>
                                 <input type="text" name="title" class="form-control" placeholder="input your title">
                                 @error('title')
                                 <p class="text-danger mb-0"><small><i class="fa-solid fa-triangle-exclamation"></i> {{ $message }}</small></p> <br>
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="">Name</label>
-                                <input type="text" name="name" class="form-control" placeholder="input your name">
-                                @error('name')
+                                <label for="description">Name</label>
+                                <textarea type="text" name="description" rows="6" class="form-control" placeholder="input your Description"></textarea>
+                                @error('description')
                                 <p class="text-danger mb-0"><small><i class="fa-solid fa-triangle-exclamation"></i> {{ $message }}</small></p> <br>
                                 @enderror
                             </div>
+
                             <div class="form-group">
-                                <label for="">Email</label>
-                                <input type="email" name="email" class="form-control" placeholder="input your email">
-                                @error('email')
+                                <label for="order_by">Order By</label>
+                                <input type="number" min="1" name="order_by" class="form-control" placeholder="input your order_by">
+                                @error('order_by')
+                                <p class="text-danger mb-0"><small><i class="fa-solid fa-triangle-exclamation"></i> {{ $message }}</small></p> <br>
+                                @enderror
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Status</label>
+                               <select class="form-select form-control-sm w-100" name="status">
+                                   <option selected disabled>Choose your Status</option>
+                                   <option value="1">Active</option>
+                                   <option value="0">Deactive</option>
+                               </select>
+                                @error('status')
                                 <p class="text-danger mb-0"><small><i class="fa-solid fa-triangle-exclamation"></i> {{ $message }}</small></p> <br>
                                 @enderror
 
                             </div>
                             <div class="form-group">
-                                <label for="">Img</label>
-                                <input type="file" name="img" class="form-control">
-                                @error('img')
+                                <label for="photo">Photo</label>
+                                <input type="file" name="photo" class="form-control">
+                                @error('photo')
                                 <p class="text-danger mb-0"><small><i class="fa-solid fa-triangle-exclamation"></i> {{ $message }}</small></p> <br>
                                 @enderror
                             </div>
-                            <div class="form-group">
-                                <label for="">Logo</label>
-                                <input type="file" name="logo" class="form-control">
-                                @error('logo')
-                                <p class="text-danger mb-0"><small><i class="fa-solid fa-triangle-exclamation"></i> {{ $message }}</small></p> <br>
-                                @enderror
-                            </div>
-                            <button type="submit" class="btn btn-block btn-primary"> About Create </button>
+                            <button type="submit" class="btn btn-block btn-primary"> Create Slider </button>
                         </form>
                     </div>
                 </div>

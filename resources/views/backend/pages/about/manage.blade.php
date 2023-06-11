@@ -1,8 +1,10 @@
 @extends('backend.layouts.master')
+@section('page_title', "About List")
 @section('content')
-    <div class="container-fluied">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
+                    <h1>@yield('page_title')</h1>
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex justify-content-between">
