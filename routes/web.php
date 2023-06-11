@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\backend\SliderController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\backend\AboutController;
 use App\Http\Controllers\backend\BackendController;
@@ -16,11 +17,11 @@ use App\Http\Controllers\admin\AdminController;
 Route::get('/admin/dashboard',[BackendController::class,'dashboard']);
 //bacekend controller end
 
-//Admin Controller Start 
+//Admin Controller Start
 Route::get('/admin/login',[AdminController::class,'adminLogin']);
 Route::post('/login/admin',[AdminController::class,'loginAdmin']);
-//Admin Controller End 
-//Front ENd Controller Start 
+//Admin Controller End
+//Front ENd Controller Start
 
 //Front ENd Controller ENd
 Route::get('/',[FrontendController::class,'homePage']);
@@ -28,6 +29,7 @@ Route::get('/abouts',[AboutController::class,'aboutpage']);
 Route::get('/contact',[FrontendController::class,'contactPage']);
 Route::get('/concern',[FrontendController::class,'concernPage']);
 Route::get('/news',[FrontendController::class,'newsPage']);
+
 
 // About Controller Start
 
@@ -72,5 +74,9 @@ Route::post('/comphany/info/update/{id}',[ContactinfoController::class,'contactI
     Route::get('/concerns/subcatagory/delete/{id}',[SizeController::class,'sizeDelete']);
     Route::post('/concerns/subcatagory/update/{id}',[SizeController::class,'sizeUpdate']);
 //concerns Size controller ENd
+
+
+//slider
+Route::resource('sliders', SliderController::class);
 
 

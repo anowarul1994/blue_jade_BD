@@ -1,4 +1,4 @@
-    <!-- 
+
 <div class="footer-section">
     <div class="container footer-top-section">
         <div class="row">
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-</div> -->
+</div>
 </div>
 
 
