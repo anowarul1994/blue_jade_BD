@@ -1,4 +1,4 @@
-@extends('frontend.layouts.master')
+<!-- @extends('frontend.layouts.master')
 
 @section('page_title', 'Product Page')
 
@@ -45,4 +45,4 @@
    </section>
     
 
-@endsection
+@endsection -->

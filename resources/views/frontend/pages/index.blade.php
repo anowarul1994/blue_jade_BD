@@ -209,9 +209,13 @@
           </div>
               <!-- img section -->
                 <!-- car filter -->
+          <div class="row parent_div">
 
-
-            <div class="row parent_div">
+               <div class="col-md-4 col-lg-3 d-none"data-id="car" >
+                  <div class="product-card">
+                     <img src="{{ asset('frontend/assets/image/product/') }}/car2.pngs" alt="">
+                  </div>
+               </div>
                @foreach ($allSize as $row)
                <div class="col-md-4 col-lg-3 myImg" data-id="{{$row->color->data_target}}">
                   <div class="product-card">
@@ -220,66 +224,11 @@
                </div>
                @endforeach
 
-
-               <div class="col-md-4 col-lg-3"data-id="car" >
-
-           </div>
-
-
-            <div class="row parent_div">
-               <div class="col-md-4 col-lg-3 d-none"data-id="car" >
-
+               <div class="col-md-4 col-lg-3 d-none"data-id="cars" >
                   <div class="product-card">
                      <img src="{{ asset('frontend/assets/image/product/') }}/car2.png" alt="">
                   </div>
                </div>
-               @foreach ($allSize as $row)
-               <div class="col-md-4 col-lg-3" data-id="{{ $row->color->data_target }}" >
-                  <div class="product-card">
-                     <img src="{{ asset('/size/'.$row->image) }}" alt="">
-                  </div>
-               </div>
-
-
-              <div class="col-md-4 col-lg-3"data-id="car" >
-                  <div class="product-card">
-                     <img src="{{ asset('frontend/assets/image/product/') }}/car4.png" alt="">
-                  </div>
-               </div>
-               <div class="col-md-4 col-lg-3" data-id="chair">
-                  <div class="product-card">
-                     <img src="{{ asset('frontend/assets/image/product/') }}/ch1.png" alt="">
-                  </div>
-               </div>
-               <div class="col-md-4 col-lg-3" data-id="chair" >
-                  <div class="product-card">
-                     <img src="{{ asset('frontend/assets/image/product/') }}/ch2.png" alt="">
-                  </div>
-               </div>
-               <div class="col-md-4 col-lg-3" data-id="chair" >
-                  <div class="product-card">
-                     <img src="{{ asset('frontend/assets/image/product/') }}/ch2.png" alt="">
-                  </div>
-               </div>
-               <div class="col-md-4 col-lg-3" data-id="shirt" >
-                  <div class="product-card">
-                     <img src="{{ asset('frontend/assets/image/product/') }}/ch2.png" alt="">
-                  </div>
-               </div>
-               <div class="col-md-4 col-lg-3" data-id="shirt" >
-                  <div class="product-card">
-                     <img src="{{ asset('frontend/assets/image/product/') }}/ch2.png" alt="">
-                  </div>
-               </div>
-               <div class="col-md-4 col-lg-3" data-id="phone" >
-                  <div class="product-card">
-                     <img src="{{ asset('frontend/assets/image/product/') }}/ch2.png" alt="">
-                  </div>
-               </div>
-
-
-               @endforeach
-
          </div>
       </div>
    </section>

@@ -38,7 +38,7 @@ class SliderController extends Controller
             $photo = $request->file('photo');
             $width = 1920;
             $height = 720;
-            $path = 'banner_img/';
+            $path = 'image/banner_img/';
             $name = Str::slug($request->input('title').'-'.Carbon::now()->toDayDateTimeString()).'.webp';
             $slider_data['photo'] = $name;
 
