@@ -29,7 +29,7 @@ class SizeController extends Controller
         return redirect('/concerns/subcategory/manage')->with('success','success');
     }
     public function sizeManage(){
-        $sizeManage = Size::with('color')->paginate(5);
+        $sizeManage = Size::with('color')->orderby('created_at','desc')->paginate(5);
         return view('backend.pages.concerns.subcatagory.manage',compact('sizeManage'));
     }
     public function sizeDelete($id){
