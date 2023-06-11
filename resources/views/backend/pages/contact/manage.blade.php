@@ -1,11 +1,12 @@
 @extends('backend.layouts.master')
+@section('page_title', "Contact List")
 @section('content')
-<div class="container-flueid">
+<div class="container-fluid">
     <div class="row">
         <div class="col">
             <div class="card">
                 <div class="card-header">
-
+                    <h3>@yield('page_title')</h3>
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered">
@@ -22,7 +23,7 @@
 
                             </tr>
                         </thead>
-                        <tbody>734346
+                        <tbody>
                             @foreach ($allContact as $row)
                             <tr>
                                 <th scope="row">{{ $loop->index+1 }}</th>
