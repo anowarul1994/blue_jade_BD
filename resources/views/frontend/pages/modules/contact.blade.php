@@ -3,7 +3,7 @@
 @section('page_title', 'Contact')
 
 @section('content')
-<div class="contact-form-section py-5">
+<!-- <div class="contact-form-section py-5">
      <div class="container">
           <div class="row">
                <div class="col-md-7">
@@ -83,6 +83,6 @@
                </div>
           </div>
      </div>
-</div>
+</div> -->
      
 @endsection

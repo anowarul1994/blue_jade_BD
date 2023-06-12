@@ -34,7 +34,41 @@ body{
     background: var(--body-bg-color);
 
 }
+/* header section start */
+html{
+    scroll-behavior: smooth;
+}
+.salman{
+    color: black;
+    font-weight: 500;
+    font-size: 20px;;
+}
+.container-fluied.header-section {
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 999;
+}
+.arrow {
+    position: fixed;
+    bottom:15px;
+    right: 14px;
+    display: none;
 
+}
+.arrow a{
+    display: inline-block;
+    color: white;
+    background-color: black;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 7px;
+}
+.active{
+    display: block;
+}
+/* header section end */
 
 /* Nav section code start */
 
