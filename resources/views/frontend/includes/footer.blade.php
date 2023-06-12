@@ -42,7 +42,7 @@
     <div class="container">
         <div class="col-md-12 logo-box">
             <div class="col-md-3">
-                <a href="#"><img src="{{ asset('/assets/image/Footer') }}/logo.png" height="80px"; width="80px"></a>
+                <a href="#"><img class="img-thumbnail" src="{{ asset('image/logo/logo.png') }}" height="80px"; width="80px"></a>
             </div>
             <div class="col-md-9 scl-icon">
                 <ul>
@@ -56,11 +56,11 @@
         </div>
     </div>
     <div class="col-md-12 copy-right">
-        <div class="col-md-8">
-            <p>&copy; 2023 Copyright By <a href="#">Blue Jade BD</a></p>
+        <div class="col-sm-12 col-md-7">
+            <p>&copy; {{ date("Y") }} Copyright By <a href="#">Blue Jade BD</a></p>
             <p>Designed & Developed By <a href="#">X-Developer</a></p>                
         </div>
-        <div class="col-md-4 condition">
+        <div class="col-sm-12 col-md-5 condition">
             <a href="#">Teams & Condition     |    Contact</a>
         </div>
     </div>
