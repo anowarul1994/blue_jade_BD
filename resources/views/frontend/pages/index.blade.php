@@ -1,10 +1,14 @@
 @extends('frontend.layouts.master')
 
 @section('page_title', 'Home')
+<!-- Slider Area Section Start--->
+@section('banner')
+ @include('frontend.includes.banner')
+@endsection
+<!-- Slider Area Section End--->
 
 @section('content')
-<!-- Slider Area Section Start--->
-<!-- Slider Area Section End--->
+
 <!---About Area Seciton Start-->
      <div class="about-section">
           <div class="container">

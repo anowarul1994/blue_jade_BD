@@ -28,12 +28,12 @@
 
      <!-- Nav Item - Pages Collapse Menu -->
      <li class="nav-item">
-         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSlider"
+         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAbout"
              aria-expanded="true" aria-controls="collapseTwo">
              <i class="fa-solid fa-image-portrait"></i>
              <span>About</span>
          </a>
-         <div id="collapseSlider" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+         <div id="collapseAbout" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
              <div class="bg-white py-2 collapse-inner rounded">
                  <a class="collapse-item" href="{{ url('/about/create') }}">About Create</a>
                  <a class="collapse-item" href="{{ url('/about/manage') }}">About Manage</a>

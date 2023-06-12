@@ -1,5 +1,6 @@
 <footer>        
     <div class="footer-info">
+        
         <div class="footer-width contact">
             <h2>GET IN TOUCH</h2>
             <ul>

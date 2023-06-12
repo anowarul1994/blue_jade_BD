@@ -1,7 +1,7 @@
 <header>
-    <div class="container-fluied header-section">
-        <nav class="navbar fix-position navbar-expand-lg sticky-top navbar-light bg-light">
-            <div class="container-fluid">
+    <div class="container-fluid container-fluied header-section bg-light ">
+        <nav class="navbar fix-position navbar-expand-lg fixed navbar-light">
+            <div class="container">
                 <a class="navbar-brand" href="{{'/'}}">
                     <img width="50px" src="{{ asset('image/logo/logo.png') }}">
                     <span style="font-size: 25px; font-weight: bold; color: #2E3092">BLUE JADE
