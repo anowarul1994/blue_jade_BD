@@ -1,66 +1,67 @@
-
-<div class="footer-section">
-    <div class="container footer-top-section">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="footer-left-section">
-                    <h3>GET IN TOUCH</h3>
-                    <ul>
-                        <li><a href="tel:+88-09612444558"><span><i class="fa-solid fa-phone-volume"></i></span> +88-09612444558</a></li>
-                        <li><a href="mailto:sharifhossaion51@gmail.com"><span><i class="fa-regular fa-message"></i></span>sharifhossaion51@gmail.com</a></li>
-                        <li><a href=""><span><i class="fa-solid fa-location-dot"></i></span> <strong>Head Office</strong> <br> <strong> House 20, Road 1/A Sector 9, <br>
-                        Dhaka 1230.</strong></a></li>
-                        <li><a href=""><span><i class="fa-solid fa-location-dot"></i></span> <strong>Factory</strong> <br>Mouchak (1751), Kaliakair.
-                        Gazipur, <br> Dhaka, Bangladesh.</a></li>
-                    </ul>
-                </div>
-            </div>
+<footer>        
+    <div class="footer-info">
+        <div class="footer-width contact">
+            <h2>GET IN TOUCH</h2>
+            <ul>
+                <li>
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    <a href="#">+8801625446671</a>
+                </li>                    
+                <li>
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                    <a href="mailto:bluejade58@gmail.com">bluejade58@gmail.com</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <a href="#">House No-13, Road No-3 <br> Basoti Housing, Mirpur-2 <br> Dhaka-1216</a>
+                </li>
+                <li>
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-width link">
+            <h2>QUICK LINKS</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Our Products</a></li>                                       
+            </ul>
+        </div>
+        <div class="footer-width about">
+            <h2>ABOUT</h2>
+            <p>
+                Our own factory made t-shirts, polo shirts, jerseys, trousers,
+                 small and large waders are taken,
+                 retail and wholesale delivered to all districts of
+                  Bangladesh and world wide. 
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-12 logo-box">
             <div class="col-md-3">
-                <div class="footer-middle-section">
-                    <h3>QUICK LINKS</h3>
-                    <ul>
-                        <li><a href="">home</a></li>
-                        <li><a href="">about</a></li>
-                        <li><a href="">concerns</a></li>
-                        <li><a href="">carrer</a></li>
-                        <li><a href="">news</a></li>
-                        <li><a href="">contact</a></li>
-                    </ul>
-                </div>
+                <a href="#"><img src="{{ asset('/assets/image/Footer') }}/logo.png" height="80px"; width="80px"></a>
             </div>
-            <div class="col-md-4">
-                <div class="footer-right-section">
-                    <a href="">
-                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=250&amp;hl=en&amp;q=netrokono,durgapur&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://capcuttemplate.org/">Capcut Templates</a></div><style>.mapouter{text-align:left;width:100%;height:250px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:250px;}.gmap_iframe {width:100%!important;height:250px!important;}</style></div>
-                    </a>
-                </div>
+            <div class="col-md-9 scl-icon">
+                <ul>
+                    <li><a href="https://www.facebook.com/bluejadebd/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"></a><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"></a><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"></a><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"></a><i class="fab fa-youtube"></i></a></li>                        
+                </ul>
             </div>
         </div>
     </div>
-<div class="container">
-        <div class="footer-bottom-section">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-2">
-                    <div class="footer-img">
-                        <img src="{{ asset('/assets/image/about/') }}/about-img.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-5"></div>
-                <div class="col-md-4">
-                    <div class="footer-social-icon">
-                        <ul class="">
-                            <li><a href=""><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
-                            <li><a href=""><span><i class="fa-brands fa-facebook-messenger"></i></span></a></li>
-                            <li><a href=""><span><i class="fa-brands fa-youtube"></i></span></a></li>
-                            <li><a href=""><span><i class="fa-brands fa-whatsapp"></i></span></a></li>
-                            <li><a href=""><span><i class="fa-brands fa-instagram"></i></span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <div class="col-md-12 copy-right">
+        <div class="col-md-8">
+            <p>&copy; 2023 Copyright By <a href="#">Blue Jade BD</a></p>
+            <p>Designed & Developed By <a href="#">X-Developer</a></p>                
         </div>
-</div>
-</div>
-
-
+        <div class="col-md-4 condition">
+            <a href="#">Teams & Condition     |    Contact</a>
+        </div>
+    </div>
+</footer>
