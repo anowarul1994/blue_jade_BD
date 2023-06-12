@@ -6,6 +6,9 @@
         <div class="banner">
             <img src="{{ asset('image/single_banner/banner.png') }}" alt="">
         </div>
+        <div>
+            
+        </div>
     </div>
 @endsection
 
