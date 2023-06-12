@@ -1,3 +1,27 @@
+//header sectionh Start
+let header = document.querySelector(".script-position");
+window.onscroll=function(){
+    let arif = window.scrollY;
+    if(arif>=100){
+      header.classList.add("salman")
+    }else{
+      header.classList.remove("salman")
+    }
+}
+
+let arrow = document.querySelector(".arrow");
+window.onscroll = function(){
+    let scroll = scrollY;
+    if(scroll>100){
+        arrow.classList.add("active")
+    }
+    else{
+        arrow.classList.remove("active")
+    }
+}
+//header sectionh ENd
+
+
 $('.slider-wrapper').slick({
     dots: true,
     arrows:true,

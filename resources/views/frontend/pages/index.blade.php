@@ -3,6 +3,8 @@
 @section('page_title', 'Home')
 
 @section('content')
+<!-- Slider Area Section Start--->
+<!-- Slider Area Section End--->
 <!---About Area Seciton Start-->
      <div class="about-section">
           <div class="container">

@@ -42,12 +42,12 @@
      </li>
 
      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAbout"
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSlider"
             aria-expanded="true" aria-controls="collapseTwo">
             <i class="fa-solid fa-image-portrait"></i>
             <span>Slider</span>
         </a>
-        <div id="collapseAbout" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseSlider" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item" href="{{ route('sliders.create') }}">Slider Create</a>
                 <a class="collapse-item" href="{{ route('sliders.index') }}">Slider Manage</a>
