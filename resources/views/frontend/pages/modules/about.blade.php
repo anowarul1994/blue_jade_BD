@@ -1,6 +1,16 @@
 @extends('frontend.layouts.master')
-
 @section('page_title', 'About')
+
+@section('banner')
+    <div class="container-fluid">
+        <div class="banner">
+            <img src="{{ asset('image/single_banner/banner.png') }}" alt="">
+        </div>
+        <div>
+            
+        </div>
+    </div>
+@endsection
 
 @section('content')    
 <div class="about-section">

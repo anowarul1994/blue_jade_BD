@@ -8,7 +8,7 @@
     @include('frontend.includes.navbar')
     {{-- navbar secction end --}}
      {{-- slider secction start --}}
-    @include('frontend.includes.slider')
+    @yield('banner')
      {{-- slider secction end --}}
 
      {{-- main content code start --}}
