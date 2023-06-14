@@ -24,12 +24,12 @@ class AboutController extends Controller
     
         if($request->file('img')){
             $name = time().'.'.$request->img->extension();
-            $request->img->move(public_path('/about/img/'),$name);
+            $request->img->move(public_path('/about_img/img/'),$name);
         }
     
         if($request->file('logo')){
             $logo = time().'.'.$request->logo->extension();
-            $request->logo->move(public_path('/about/logo/'),$logo);
+            $request->logo->move(public_path('/about_img/logo/'),$logo);
         }
     
         $abouts = new About();
@@ -59,19 +59,19 @@ class AboutController extends Controller
       public function aboutUpdate(Request $request,$id){
         $about= About::find($id);
         if(isset($request->img)){
-            if($about->img && file_exists('/about/img/'.$about->img)){
+            if($about->img && file_exists('/about_img/img/'.$about->img)){
                 unlink('/about/img/'.$about->img);
             }
             $updateimg = time().'.'.$request->img->extension();
-            $request->img->move(public_path('/about/img/'),$updateimg);
+            $request->img->move(public_path('/about_img/img/'),$updateimg);
             $about->img = $updateimg;
         }
         if(isset($request->logo)){
-            if($about->logo && file_exists('/about/logo/'.$about->logo)){
+            if($about->logo && file_exists('/about_img/logo/'.$about->logo)){
                 unlink('/about/logo/'.$about->logo);
             }
             $updatelogo = time().'.'.$request->logo->extension();
-            $request->logo->move(public_path('/about/logo/'),$updatelogo);
+            $request->logo->move(public_path('/about_img/logo/'),$updatelogo);
             $about->logo = $updatelogo;
         }
         $about->title = $request->title;
@@ -87,7 +87,7 @@ class AboutController extends Controller
 
 
     //frontend section About start
-    public function aboutpage(){
+    public function aboutPage(){
         $allAbout = About::get();
         return view('frontend.pages.modules.about',compact('allAbout'));
     }

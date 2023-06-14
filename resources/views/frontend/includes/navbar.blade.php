@@ -1,5 +1,5 @@
 <header>
-    <div class="container-fluid container-fluied header-section bg-light ">
+    <div class="container-fluid header-section bg-light ">
         <nav class="navbar fix-position navbar-expand-lg fixed navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="{{'/'}}">
@@ -17,7 +17,7 @@
                             <a class="nav-link active" aria-current="page" href="{{ '/' }}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">ABOUT US</a>
+                            <a class="nav-link" href="{{ route('front.about') }}">ABOUT US</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">NEWS</a>
@@ -34,7 +34,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-warning" href="#" tabindex="-1" aria-disabled="true">CONTACT US</a>
+                            <a class="btn btn-warning" href="{{ route('front.contact') }}" tabindex="-1" aria-disabled="true">CONTACT US</a>
                         </li>
                     </ul>
                 </div>
