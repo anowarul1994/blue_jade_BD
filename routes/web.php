@@ -25,8 +25,8 @@ Route::post('/login/admin',[AdminController::class,'loginAdmin']);
 
 //Front ENd Controller ENd
 Route::get('/',[FrontendController::class,'homePage']);
-Route::get('/abouts',[AboutController::class,'aboutpage']);
-Route::get('/contact',[FrontendController::class,'contactPage']);
+Route::get('/about',[AboutController::class,'aboutPage'])->name('front.about');
+Route::get('/contact',[FrontendController::class,'contactPage'])->name('front.contact');
 Route::get('/concern',[FrontendController::class,'concernPage']);
 Route::get('/news',[FrontendController::class,'newsPage']);
 

@@ -2,14 +2,7 @@
 @section('page_title', 'About')
 
 @section('banner')
-    <div class="container-fluid">
-        <div class="banner">
-            <img src="{{ asset('image/single_banner/banner.png') }}" alt="">
-        </div>
-        <div>
-            
-        </div>
-    </div>
+    @include('frontend.includes.single_banner')
 @endsection
 
 @section('content')    
@@ -60,8 +53,8 @@
             <div class="row about-row">
                 <div class="col-lg-5 col-md-6 col-sm-12">
                     <div class="about-contact my-3">
-                        <span>27 August, 2001</span>
-                        <h6>SADMA FASHION WEAR LTD .</h6>
+                        <span> 27 August, 2001 </span>
+                        <h6>SADMA FASHION WEAR LTD.</h6>
                         <p>We have intentionally never developed a stylistic formula for our work, which is why our projects never quite look or feel the same</p>
                     </div>
                     <div class="about-contact my-3">

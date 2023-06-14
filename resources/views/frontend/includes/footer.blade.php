@@ -41,18 +41,21 @@
         </div>
     </div>
     <div class="container">
-        <div class="col-md-12 logo-box">
-            <div class="col-md-3">
-                <a href="#"><img class="img-thumbnail" src="{{ asset('image/logo/logo.png') }}" height="80px"; width="80px"></a>
-            </div>
-            <div class="col-md-9 scl-icon">
-                <ul>
-                    <li><a href="https://www.facebook.com/bluejadebd/"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"></a><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"></a><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"></a><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"></a><i class="fab fa-youtube"></i></a></li>                        
-                </ul>
+       
+        <div class="row">
+            <div class="logo-box">
+                <div class="col-md-3 col-sm-12">
+                    <a href="#"><img class="img-thumbnail" src="{{ asset('image/logo/logo.png') }}" height="80px"; width="80px"></a>
+                </div>
+                <div class="col-md-9 col-sm-12 scl-icon">
+                    <ul>
+                        <li><a href="https://www.facebook.com/bluejadebd/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"></a><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"></a><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"></a><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"></a><i class="fab fa-youtube"></i></a></li>                        
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
