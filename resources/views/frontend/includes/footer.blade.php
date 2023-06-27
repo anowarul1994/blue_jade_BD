@@ -1,6 +1,5 @@
 <footer>        
     <div class="footer-info">
-        
         <div class="footer-width contact">
             <h2>GET IN TOUCH</h2>
             <ul>
@@ -41,30 +40,27 @@
         </div>
     </div>
     <div class="container">
-       
-        <div class="row">
-            <div class="logo-box">
-                <div class="col-md-3 col-sm-12">
-                    <a href="#"><img class="img-thumbnail" src="{{ asset('image/logo/logo.png') }}" height="80px"; width="80px"></a>
-                </div>
-                <div class="col-md-9 col-sm-12 scl-icon">
-                    <ul>
-                        <li><a href="https://www.facebook.com/bluejadebd/"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"></a><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"></a><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"></a><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"></a><i class="fab fa-youtube"></i></a></li>                        
-                    </ul>
-                </div>
+        <div class="col-md-12 logo-box">
+            <div class="col-md-3">
+                <a href="#"><img src="{{ asset('/assets/image/Footer') }}/logo.png" height="80px"; width="80px"></a>
+            </div>
+            <div class="col-md-9 scl-icon">
+                <ul>
+                    <li><a href="https://www.facebook.com/bluejadebd/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"></a><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"></a><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"></a><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"></a><i class="fab fa-youtube"></i></a></li>                        
+                </ul>
             </div>
         </div>
     </div>
     <div class="col-md-12 copy-right">
-        <div class="col-sm-12 col-md-7">
-            <p>&copy; {{ date("Y") }} Copyright By <a href="#">Blue Jade BD</a></p>
+        <div class="col-md-8">
+            <p>&copy; 2023 Copyright By <a href="#">Blue Jade BD</a></p>
             <p>Designed & Developed By <a href="#">X-Developer</a></p>                
         </div>
-        <div class="col-sm-12 col-md-5 condition">
+        <div class="col-md-4 condition">
             <a href="#">Teams & Condition     |    Contact</a>
         </div>
     </div>
